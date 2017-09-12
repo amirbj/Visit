@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <LinearLayout
+            android:background="@drawable/info_table_shape_2"
+            android:id="@+id/one"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/title"
+                android:gravity="center"
+                android:text="@string/tab_title_2"
+                android:textSize="15sp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/two"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <include layout="@layout/bill_info_list2_table"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+<!--
+<LinearLayout
+android:id="@+id/three"
+android:layout_width="fill_parent"
+android:layout_height="wrap_content"
+android:orientation="horizontal">
+
+&lt;!&ndash;            <include layout="@layout/table_counter"/>&ndash;&gt;
+
+</LinearLayout>
+
+<LinearLayout
+android:id="@+id/four"
+android:layout_width="fill_parent"
+android:layout_height="wrap_content"
+android:orientation="horizontal">
+
+&lt;!&ndash;           <include layout="@layout/table_name"/>&ndash;&gt;
+
+</LinearLayout>
+
+<LinearLayout
+android:id="@+id/five"
+android:layout_width="fill_parent"
+android:layout_height="wrap_content"
+android:orientation="horizontal">
+
+&lt;!&ndash;            <include layout="@layout/table_reader"/>&ndash;&gt;
+
+</LinearLayout>
+
+<LinearLayout
+android:id="@+id/six"
+android:layout_width="fill_parent"
+android:layout_height="wrap_content"
+android:orientation="horizontal">
+
+&lt;!&ndash;            <include layout="@layout/table_debt"/>&ndash;&gt;
+
+</LinearLayout>-->

@@ -1,0 +1,71 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>نمودار پشته ای افقی</title>
+        <meta name="HandheldFriendly" content="True">
+        <meta name="MobileOptimized" content="320">
+        <meta name="viewport" content="width=device-width">		
+		<script type="text/javascript" src="../js/jquery-1.7.2.js"></script>
+		<script type="text/javascript" src="../js/highcharts.js"></script>
+		<script type="text/javascript" src="../js/exporting.js"></script>
+		<script type="text/javascript">
+			var chart;
+			$(document).ready(function() {
+			      WebViewReportManager.showToast('hi tis is test');
+				  chart = new Highcharts.Chart({
+					  chart: {
+						  renderTo: 'container',
+						  defaultSeriesType: 'bar'
+					  },
+					  title: {
+						  text: 'نمودار فروش'
+					  },
+					  xAxis: {
+						  categories: ['محصول اول', 'محصول دوم', 'محصول سوم', 'محصول چهارم', 'محصول پنجم']
+					  },
+					  yAxis: {
+						  min: 0,
+						  title: {
+							  text: 'محصولات به فروش رفته'
+						  }
+					  },
+					  legend: {
+						  backgroundColor: '#FFFFFF',
+						  reversed: true
+					  },
+					  tooltip: {
+						  formatter: function () {
+							  return '' +
+								   this.series.name + ': ' + this.y + '';
+						  }
+					  },
+					  plotOptions: {
+						  series: {
+							  stacking: 'normal'
+						  }
+					  },
+					  series: [{
+						  name: 'اسماعیل لو',
+						  data: [5, 3, 4, 7, 2]
+					  }, {
+						  name: 'کارونی',
+						  data: [2, 2, 3, 2, 1]
+					  }, {
+						  name: 'فرجی',
+						  data: [3, 4, 4, 2, 5]
+					  }, {
+						  name: 'شیرزادی',
+						  data: [3, 4, 4, 2, 5]
+					  }, {
+						  name: 'جعفری',
+						  data: [3, 4, 4, 2, 5]
+					  }]
+				  });			});
+				
+		</script>
+	</head>
+	<body>
+		<div id="container"/>
+	</body>
+</html>

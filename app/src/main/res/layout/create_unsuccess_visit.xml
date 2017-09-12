@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/unsuccess_visit_date"
+        style="@style/Font_padding_margin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="date"
+        android:background="@drawable/cell_shape"
+        android:gravity="center" />
+<Spinner
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/reason_spinner">
+
+
+</Spinner>
+    <TextView
+        android:id="@+id/unsuccess_visit_desc"
+        style="@style/Font_padding_margin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="date"
+        android:background="@drawable/cell_shape"
+        android:gravity="center" />
+</LinearLayout>

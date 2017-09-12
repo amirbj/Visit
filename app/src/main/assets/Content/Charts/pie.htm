@@ -1,0 +1,72 @@
+﻿<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>دایره ای</title>
+        <meta name="HandheldFriendly" content="True">
+        <meta name="MobileOptimized" content="320">
+        <meta name="viewport" content="width=device-width">		
+		<script type="text/javascript" src="../js/jquery-1.7.2.js"></script>
+		<script type="text/javascript" src="../js/highcharts.js"></script>
+		<script type="text/javascript" src="../js/exporting.js"></script>
+		<script type="text/javascript">
+			var chart;
+			$(document).ready(function() {
+				result = WebViewReportManager.load_data();
+				<!-- result = '[["A",10],["B",10],["C",10],["D",10]]'; -->
+				<!-- result = '[{"A":10},{"B":10},{"C":10},{"D":10}]'; -->
+				<!-- var result = '[["تعداد کمپین تبلیغاتی 8<br/>هزینه کل 1910599",100.0],["تعداد برنامه تبلیغ دیجیتال 46<br/>هزینه 462273<br/>تعداد فعالیت تبلیغاتی 5<br/>هزینه 1448899<br/>تعداد فعالیت شبکه اجتماعی 24<br/>هزینه 0",100.0],["تعداد جامعه هدف 90141",100.0],["تعداد مخاطب 83",100.0],["تعداد فرصت 60<br/>مبلغ 300136359492",100.0],["تعداد پیش فاکتور 12<br/>مبلغ 84263811.00",100.0],["تعداد فاکتور (63<br/>مبلغ (184307815.00<br/>تعداد قرارداد (1<br/>مبلغ (50000.00",100.0]]'; -->
+			    if (result != '') {
+			        var data = JSON.parse(result);
+					//var title = WebViewReportManager.get_title();
+					//var footer = WebViewReportManager.get_footer();
+					document.getElementById('footer').innerHTML = footer;
+			        DrawChart(data,"ssss");
+			    }
+			});
+			function DrawChart(series,title) {
+				chart = new Highcharts.Chart({
+					chart: {
+							  renderTo: 'container',
+							  plotBackgroundColor: null,
+							  plotBorderWidth: null,
+							  plotShadow: false
+					},
+					title: {
+						text: title
+					},
+					tooltip: {
+						  formatter: function () {
+							  return '<b>' + this.point.name + '</b>: %' + this.percentage.toFixed() + '';
+						  }
+					},
+					plotOptions: {
+						  pie: {
+							  allowPointSelect: true,
+							  cursor: 'pointer',
+							  dataLabels: {
+								  enabled: true,
+								  color: '#000000',
+								  connectorColor: '#000000',
+								  formatter: function () {
+								      return '<b>' + this.point.name + '</b>: %' + this.percentage.toFixed();
+								  }
+							  }
+						  }
+					},
+					exporting: { enabled: false },
+					series: [{
+						type: 'pie',
+						name: 'درصد',
+						data: series
+					}]
+				});
+			}
+		</script>
+		
+	</head>
+	<body>
+		<div id="container"></div>
+		<div id="footer" align="center"></div>
+	</body>
+</html>

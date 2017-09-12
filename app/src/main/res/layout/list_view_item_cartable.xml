@@ -1,0 +1,72 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_selector_cartable">
+        <LinearLayout
+            android:id="@+id/list_view_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/cartable_phone"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginLeft="8dp"
+                android:padding="4dp"
+                android:focusable="false"
+                android:src="@drawable/ic_second_action"/>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="8"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/cartableInfo"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/cartable_subscription_name"
+                        style="@style/Font_padding_margin"
+                        android:gravity="right|center_vertical"
+                        android:layout_height="match_parent"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:text="Name"/>
+
+                    <TextView
+                        android:id="@+id/cartable_request_number"
+                        style="@style/Font_padding_margin"
+                        android:gravity="center"
+                        android:layout_height="match_parent"
+                        android:layout_width="wrap_content"
+                        android:text="RequestNo"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/cartable_address"
+                    style="@style/Font_padding_margin"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:text="Address"/>
+            </LinearLayout>
+            <ImageView
+                android:id="@+id/cartable_status"
+                android:gravity="center"
+                android:layout_width="48dp"
+                android:layout_height="match_parent"
+                android:padding="8dp"
+                android:src="@drawable/ic_state_unvisited" />
+            <ImageView
+                android:id="@+id/list_item_indicator"
+                android:layout_width="9dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_header1"/>
+        </LinearLayout>
+</FrameLayout>

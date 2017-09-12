@@ -1,0 +1,66 @@
+<resources>
+    <string name="app_name">Dataaccess</string>
+
+    <string name="material_unit_device">دستگاه</string>
+    <string name="material_unit_meter">متر</string>
+    <string name="material_unit_number">عدد</string>
+    <string name="material_unit_item">فقره</string>
+
+    <string name="material_template_one">انشعابات مجموعه ای (داخل تابلو) تکفاز</string>
+    <string name="material_template_two">انشعابات مجموعه ای (داخل تابلو) سه فاز و تک فاز</string>
+    <string name="material_template_three">انشعابات تک مشترک تک فاز</string>
+    <string name="material_template_four">انشعاب تک مشترک سه فاز</string>
+    <string name="material_template_five">انشعاب دیماندی اولیه</string>
+    <string name="material_template_six">انشعاب دیماندی ثانویه</string>
+    <string name="material_template_seven">انشعاب پای پستی</string>
+    <string name="material_template_eight">افزایشی تک فاز</string>
+    <string name="material_template_nine">افزایش به سه فاز</string>
+    <string name="material_template_ten">انشعاب دیماندی کشاورزی</string>
+    <string name="material_template_eleven">افزایش از آمپری به دیماندی</string>
+
+    <string name="material_one">کنتور تک فاز</string>
+    <string name="material_two">قاب کنتور</string>
+    <string name="material_three">کنتور سه فاز</string>
+    <string name="material_four">کنتور دیماندی ثانویه</string>
+    <string name="material_five">کابل 2*6</string>
+    <string name="material_six">کابل 4*6</string>
+    <string name="material_seven">کابل 4*10</string>
+    <string name="material_eight">کلید مینیاتوری تک فاز</string>
+    <string name="material_nine">کلید مینیاتوری سه فاز</string>
+    <string name="material_ten">وینچ کلمپ</string>
+    <string name="material_eleven">دستک شمالی</string>
+    <string name="material_twelve">دستک جنوبی</string>
+    <string name="material_thirtheen">قاب فیوز</string>
+    <string name="material_fourtheen">جعبه فیوز 4*32</string>
+    <string name="material_fifteen">دم خوکی</string>
+    <string name="material_sixteen">جعبه انشعاب 7*32</string>
+
+    <string name="material_eighteen">کابل 16*4</string>
+    <string name="material_nineteen">هزینه نظارت امپری به ازای هر دستگاه</string>
+    <string name="material_twenty">پلمپ</string>
+    <string name="material_twentyone">کلمپ انشعاب</string>
+    <string name="material_twentytwo">پیچ شکاف دار 35</string>
+    <string name="material_twentythree">پیچ شکاف دار 50</string>
+    <string name="material_twentyfour">هزینه نظارت دیماندی به ازای هر دستگاه</string>
+    <string name="material_twentyfive">هزینه متفرقه به ازای هر دستگاه کنتور</string>
+    <string name="material_twentysix">هزینه جابجایی کنتور</string>
+    <string name="material_twentyseven">هزینه جمع اوری کنتور</string>
+    <string name="material_twentyeight">دستمزد نصب تابلوی پای پستی</string>
+    <string name="material_twentynine">کنتور دیماندی اولیه</string>
+    <string name="material_thirty">مودم دیماندی با نصب</string>
+    <string name="material_thirtyone">کنتور هوشمند</string>
+    <string name="material_thirtytwo">مابه التفاوت درخواست</string>
+    <string name="material_thirtythree">تابلو مجتمع</string>
+    <string name="material_thirtyfour">قفل</string>
+    <string name="material_thirtyfive">هزینه جابجایی کنتور دیماندی</string>
+    <string name="material_thirtysix">تابلو لوازم اندازه گیری دیماندی</string>
+    <string name="material_thirtyseven">تابلو مجتمع</string>
+    <string name="material_thirtyeight">تابلو دیماندی 160 امپری</string>
+    <string name="material_thirtynine">تابلو دیماندی 250 امپری</string>
+    <string name="material_fourty">تابلو دیماندی 400 امپری</string>
+
+    <string name="material_user">متقاضی</string>
+    <string name="material_company">شرکت</string>
+
+
+</resources>

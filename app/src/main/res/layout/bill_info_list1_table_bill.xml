@@ -1,0 +1,137 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TableLayout
+        android:background="@drawable/info_table_shape_1"
+        android:padding="5dp"
+        android:id="@+id/table_one"
+        android:stretchColumns="0,1,2,3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TableRow
+            android:gravity="end">
+            <TextView
+                android:background="@drawable/cell_shape"
+                android:layout_margin="5dp"
+                android:padding="5dp"
+                android:id="@+id/sub_type"
+                android:textSize="15sp"
+                android:layout_column="0"
+                android:layout_width="0dp"
+                android:layout_weight="1"/>
+            <TextView
+                android:layout_margin="5dp"
+                android:padding="5dp"
+                android:text="@string/sub_type"
+                android:textSize="15sp"
+                android:layout_column="1"
+                android:layout_width="0dp"
+                android:layout_weight="1"/>
+            <TextView
+                android:background="@drawable/cell_shape"
+                android:layout_margin="5dp"
+                android:padding="5dp"
+                android:id="@+id/Bill_ident"
+                android:textSize="15sp"
+                android:layout_column="2"
+                android:layout_width="0dp"
+                android:layout_weight="1"/>
+            <TextView
+                android:layout_margin="5dp"
+                android:padding="5dp"
+                android:text="@string/bill_identification"
+                android:textSize="15sp"
+                android:layout_column="3"
+                android:layout_width="0dp"
+                android:layout_weight="1"/>
+        </TableRow>
+
+        <TableRow
+            android:gravity="end">
+            <TextView
+                android:background="@drawable/cell_shape"
+                android:layout_margin="5dp"
+                android:padding="5dp"
+                android:id="@+id/counter_type"
+                android:textSize="15sp"
+                android:layout_column="0"
+                android:layout_width="0dp"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:layout_margin="5dp"
+                android:padding="5dp"
+                android:text="@string/counter_type"
+                android:textSize="15sp"
+                android:layout_column="1"
+                android:layout_width="0dp"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:background="@drawable/cell_shape"
+                android:layout_margin="5dp"
+                android:padding="5dp"
+                android:id="@+id/sub_status"
+                android:textSize="15sp"
+                android:layout_column="2"
+                android:layout_width="0dp"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:layout_margin="5dp"
+                android:padding="5dp"
+                android:text="@string/sub_status"
+                android:textSize="15sp"
+                android:layout_column="3"
+                android:layout_width="0dp"
+                android:layout_weight="1"/>
+
+        </TableRow>
+        <TableRow
+            android:gravity="end">
+
+            <TextView
+                android:visibility="invisible"
+                android:background="@drawable/cell_shape"
+                android:layout_margin="5dp"
+                android:padding="5dp"
+                android:textSize="15sp"
+                android:layout_column="0"
+                android:layout_width="0dp"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:visibility="invisible"
+                android:layout_margin="5dp"
+                android:padding="5dp"
+                android:text="@string/zone_code"
+                android:textSize="15sp"
+                android:layout_column="1"
+                android:layout_width="0dp"
+                android:layout_weight="1" />
+
+            <TextView
+                android:background="@drawable/cell_shape"
+                android:layout_margin="5dp"
+                android:padding="5dp"
+                android:id="@+id/zone_code"
+                android:textSize="15sp"
+                android:layout_column="0"
+                android:layout_width="0dp"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:layout_margin="5dp"
+                android:padding="5dp"
+                android:text="@string/zone_code"
+                android:textSize="15sp"
+                android:layout_column="1"
+                android:layout_width="0dp"
+                android:layout_weight="1" />
+
+        </TableRow>
+
+    </TableLayout>
+
+</FrameLayout>

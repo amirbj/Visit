@@ -1,0 +1,16 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <integer name="demandedFragmentTabFontSize">14</integer>
+    <integer name="demandedFragmentEditTextSize">14</integer>
+    <dimen name="observeRowFontSize1">15sp</dimen>
+    <dimen name="observeRowSize1">25dp</dimen>
+    <dimen name="padding_value_1">1dp</dimen>
+    <dimen name="padding_value_2">4dp</dimen>
+    <dimen name="padding_value_3">2dp</dimen>
+    <dimen name="dialog_title_text_size">24sp</dimen>
+    <dimen name="dialog_body_text_size">24sp</dimen>
+
+</resources>

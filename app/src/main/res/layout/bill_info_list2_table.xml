@@ -1,0 +1,134 @@
+<TabHost
+    android:id="@+id/tab_host"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TabWidget android:id="@android:id/tabs"
+            android:background="@drawable/info_table_shape_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <FrameLayout android:id="@android:id/tabcontent"
+            android:background="@drawable/info_table_shape_2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:id="@+id/correct_sale"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:background="@drawable/cell_shape"
+                        android:layout_margin="5dp"
+                        android:padding="5dp"
+                        android:textSize="15sp"
+                        android:layout_column="0"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.2"
+                        android:layout_marginRight="10dp"
+                        android:text="@string/sale_price"/>
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:background="@drawable/cell_shape"
+                        android:layout_margin="5dp"
+                        android:padding="5dp"
+                        android:textSize="15sp"
+                        android:layout_column="0"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.2"
+                        android:layout_marginRight="10dp"
+                        android:text="@string/reactive_usage"/>
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:background="@drawable/cell_shape"
+                        android:layout_margin="5dp"
+                        android:padding="5dp"
+                        android:textSize="15sp"
+                        android:layout_column="0"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.2"
+                        android:layout_marginRight="10dp"
+                        android:text="@string/active_usage"/>
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:background="@drawable/cell_shape"
+                        android:layout_margin="5dp"
+                        android:padding="5dp"
+                        android:textSize="15sp"
+                        android:layout_column="0"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.2"
+                        android:layout_marginRight="10dp"
+                        android:text="@string/current_monitoring_time"/>
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:background="@drawable/cell_shape"
+                        android:layout_margin="5dp"
+                        android:padding="5dp"
+                        android:textSize="15sp"
+                        android:layout_column="0"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.2"
+                        android:layout_marginRight="10dp"
+                        android:text="@string/update_time"/>
+                </LinearLayout>
+
+                <ListView
+                    android:id="@+id/correct_sale_records"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/incorrect_sale"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="600dp"
+                android:orientation="horizontal">
+                <include layout="@layout/bill_info_list1_table_counter"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/current_sale"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="600dp"
+                android:orientation="horizontal">
+                <include layout="@layout/bill_info_list1_table_debt"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/not_exported_sale"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="600dp"
+                android:orientation="horizontal">
+                <include layout="@layout/bill_info_list1_table_name"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/consumption_diagram"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="600dp"
+                android:orientation="horizontal">
+                <include layout="@layout/bill_info_list1_table_reader"/>
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+</TabHost>

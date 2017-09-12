@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:weightSum="1">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".8"
+            android:textSize="11dp"
+            android:text="تنظیمات:
+    در این بخش کاربر می تواند تنظیمات مختلف از قبیل آدرس سرور، نحوه به روز رسانی کارتابل و نحوه مدیریت درخواست های ارسال شده را تنظیم نماید.
+    "
+            />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight=".2"
+            android:src="@drawable/ic_logo_setting"
+            android:id="@+id/imageView" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:weightSum="1">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".8"
+            android:textSize="11dp"
+            android:text="بروزرسانی نقشه:
+در این بخش کاربر نقشه GIS مورد استفاده در برنامه را از سرور دریافت و بروز رسانی می نماید.
+"
+            />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight=".2"
+            android:src="@drawable/ic_drawer_map1"
+             />
+    </LinearLayout>
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginTop="20dp"
+    android:weightSum="1">
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight=".8"
+        android:text="بروز رسانی نرم افزار:
+در این بخش کاربر قادر خواهد بود آخرین نسخه ویرایش شده نرم افزار را بطور خودکار بروزرسانی نماید.
+"
+        />
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_weight=".2"
+        android:src="@drawable/ic_drawer_software_update"
+        />
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:weightSum="1">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="11dp"
+            android:layout_weight=".8"
+            android:text="بروزرسانی اطلاعات پایه:
+در این بخش کاربر اطلاعات پایه از قبیل اطلاعات کالا، فهرست مشاهدات و انواع دامنه ها  را از سرور دریافت نماید.
+"
+            />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight=".2"
+            android:src="@drawable/ic_drawer_data_update"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:weightSum="1">
+        <TextView
+            android:layout_width="0dp"
+            android:textSize="11dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".8"
+            android:text="خدمات سیم کارت:
+در این بخش کاربر به خدمات سیم کارت از قبیل استعلام مانده دسترسی می یابد.
+"
+            />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight=".2"
+            android:src="@drawable/ic_drawer_sim_card"
+            android:id="@+id/imageView2" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:weightSum="1">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".8"
+            android:textSize="11dp"
+            android:text="راهنما:
+با زدن این دگمه راهنمای کار با برنامه نمایش داده می شود.
+"
+            />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight=".2"
+            android:src="@drawable/ic_drawer_info"
+            android:id="@+id/imageView3" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:weightSum="1">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".8"
+            android:textSize="11dp"
+            android:text="درباره :
+با زدن این دگمه اطلاعات مربوط به برنامه و شرکت تولید کننده نمایش داده می شود.
+"
+            />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight=".2"
+            android:src="@drawable/ic_logo_about"
+            android:id="@+id/imageView4" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:weightSum="1">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".8"
+            android:textSize="11dp"
+            android:text="خروج:
+با زدن این دگمه برنامه بسته می شود.
+"
+            />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight=".2"
+            android:src="@drawable/ic_drawer_exit"
+            android:id="@+id/imageView5" />
+    </LinearLayout>
+</LinearLayout>

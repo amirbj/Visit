@@ -1,0 +1,94 @@
+<LinearLayout
+    android:background="@drawable/info_table_shape_1"
+    android:id="@+id/correct_sale"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<!--    <TableLayout
+        android:background="@drawable/info_table_shape_1"
+        android:padding="5dp"
+        android:gravity="end"
+        android:stretchColumns="0,1,2,3,4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TableRow
+            android:gravity="end">-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:background="@drawable/cell_shape"
+                    android:layout_margin="5dp"
+                    android:padding="5dp"
+                    android:textSize="15sp"
+                    android:layout_column="0"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.2"
+                    android:layout_marginRight="10dp"
+                    android:text="@string/period"/>
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:background="@drawable/cell_shape"
+                    android:layout_margin="5dp"
+                    android:padding="5dp"
+                    android:textSize="15sp"
+                    android:layout_column="0"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.2"
+                    android:layout_marginRight="10dp"
+                    android:text="@string/retrieve_Time"/>
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:background="@drawable/cell_shape"
+                    android:layout_margin="5dp"
+                    android:padding="5dp"
+                    android:textSize="15sp"
+                    android:layout_column="0"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.2"
+                    android:layout_marginRight="10dp"
+                    android:text="@string/bank_Name"/>
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:background="@drawable/cell_shape"
+                    android:layout_margin="5dp"
+                    android:padding="5dp"
+                    android:textSize="15sp"
+                    android:layout_column="0"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.2"
+                    android:layout_marginRight="10dp"
+                    android:text="@string/retrieve_Price"/>
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:background="@drawable/cell_shape"
+                    android:layout_margin="5dp"
+                    android:padding="5dp"
+                    android:textSize="15sp"
+                    android:layout_column="0"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.2"
+                    android:layout_marginRight="10dp"
+                    android:text="@string/update_time"/>
+            </LinearLayout>
+
+            <ListView
+                android:id="@+id/retrieve_records"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+<!--            </TableRow>
+    </TableLayout>-->
+
+</LinearLayout>

@@ -1,0 +1,93 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>نمودار قیفی</title>
+        <meta name="HandheldFriendly" content="True">
+        <meta name="MobileOptimized" content="320">
+        <meta name="viewport" content="width=device-width">
+		<script type="text/javascript" src="../js/jquery-1.7.2.js"></script>
+		<script type="text/javascript" src="../js/highcharts.js"></script>
+		<script type="text/javascript" src="../js/funnel.js"></script>
+		<script type="text/javascript" src="../js/exporting.js"></script>
+		<script type="text/javascript">
+			var chart;
+			$(document).ready(function() {
+				<!-- result = WebViewReportManager.load_data(); -->
+				var result = '[["تعداد کمپین تبلیغاتی 8<br/>هزینه کل 1910599",100.0],["تعداد برنامه تبلیغ دیجیتال 46<br/>هزینه 462273<br/>تعداد فعالیت تبلیغاتی 5<br/>هزینه 1448899<br/>تعداد فعالیت شبکه اجتماعی 24<br/>هزینه 0",100.0],["تعداد جامعه هدف 90141",100.0],["تعداد مخاطب 83",100.0],["تعداد فرصت 60<br/>مبلغ 300136359492",100.0],["تعداد پیش فاکتور 12<br/>مبلغ 84263811.00",100.0],["تعداد فاکتور (63<br/>مبلغ (184307815.00<br/>تعداد قرارداد (1<br/>مبلغ (50000.00",100.0]]';
+ 			    if (result != '') {
+			        var data = JSON.parse(result);
+					var title = 'funnel';
+					<!-- var title = WebViewReportManager.get_title(); -->
+					<!-- var footer = WebViewReportManager.get_footer(); -->
+					document.getElementById('footer').innerHTML = footer;
+			        DreawChart(data,title);
+			    }
+			});
+			function DreawChart(series,title) {
+				  chart = new Highcharts.Chart({
+					  chart: {
+						  renderTo: 'container',
+						  type: 'funnel',
+						  marginRight: 100
+					  },
+					  title: {
+						  text: title
+					  },
+					  plotArea: {
+						  shadow: null,
+						  borderWidth: null,
+						  backgroundColor: null
+					  },
+					  tooltip: {
+							pointFormat:'<span dir="ltr">{point.name}</span>'
+						},
+					  plotOptions: {
+						  series: {
+							  dataLabels: {
+								  enabled: true,								  
+								  format: '{point.name}',
+								  color: 'black',
+								  style: {
+										'fontSize' : '10px'
+								  },
+								  borderRadius: 5,
+								  backgroundColor: 'rgba(252, 252, 197, 0.7)',
+								  borderWidth: 1,
+								  borderColor: '#AAA',
+								  y: -10,
+								  x: -70,
+								  softConnector: true
+							  },
+							  neckWidth: '30%',
+							  neckHeight: '25%',
+							  allowPointSelect: false,
+							  enableMouseTracking: true,
+							  allowPointSelect: true,							  
+							  point: {
+								  events: {
+									  select: function () {
+										
+									  }
+								  }
+							  }
+						  }
+					  },
+					  exporting: {enabled: false},
+					  legend: {
+						  enabled: false
+					  },
+					  series: [{
+						  name: '',
+						  data: series
+					  }]
+				  });
+			}				
+		</script>
+		
+	</head>
+	<body>		
+		<div id="container"></div>
+		<div id="footer" align="center"></div>		
+	</body>
+</html>

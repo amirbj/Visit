@@ -1,0 +1,519 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_weight="1"
+    android:layout_height= "wrap_content">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:nestedScrollingEnabled="true"
+    android:orientation="vertical"
+
+    >
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:nestedScrollingEnabled="true"
+        android:orientation="vertical"
+
+        >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/dark_gray"
+                android:gravity="center">
+
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:gravity="center"
+                    android:text="کنتورهای جمع آوری"
+                    android:textStyle="bold"
+                    android:id="@+id/textView25" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:focusable="false"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/cartable_material_responsible"
+                    style="@style/Font_padding_margin"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.25"
+                    android:background="@drawable/cell_shape"
+                    android:gravity="center"
+                    android:focusable="false"
+                    android:clickable="false"
+                    android:text="شرح" />
+
+                <TextView
+                    android:id="@+id/cartable_material_estimated"
+                    style="@style/Font_padding_margin"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.25"
+                    android:background="@drawable/cell_shape"
+                    android:gravity="center"
+                    android:focusable="false"
+                    android:clickable="false"
+                    android:text="نوع کنتور" />
+
+                <TextView
+                    android:id="@+id/cartable_material_subscrip"
+                    style="@style/Font_padding_margin"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.25"
+                    android:background="@drawable/cell_shape"
+                    android:gravity="center"
+                    android:focusable="false"
+                    android:clickable="false"
+                    android:text="پرونده" />
+                -->
+
+                <TextView
+                    android:id="@+id/cartable_material_goods"
+                    style="@style/Font_padding_margin"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.25"
+                    android:background="@drawable/cell_shape"
+                    android:gravity="center"
+                    android:focusable="false"
+                    android:clickable="false"
+                    android:text="بدنه" />
+            </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="5dp"
+        android:gravity="end"
+        android:orientation="horizontal">
+
+        <ListView
+            android:id="@+id/collect_material_tools_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusableInTouchMode="true"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="@color/list_item_title"
+
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/dark_gray"
+        android:focusable="false"
+        android:gravity="center">
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_weight=".1"
+            android:background="@color/dark_gray"
+            android:id="@+id/collect_add_button"
+            android:src="@drawable/ic_add_button"
+            android:focusable="false"
+            android:layout_height="wrap_content" />
+        <TextView
+
+            android:layout_width="0dp"
+            android:layout_weight=".5"
+            android:layout_height="30dp"
+            android:paddingRight="50dp"
+            android:gravity="center"
+            android:focusable="false"
+            android:text="سایرکالاهای جمع آوری"
+            android:textStyle="bold"
+            />
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_weight=".1"
+            android:background="@color/dark_gray"
+            android:id="@+id/material_collect_add"
+            android:src="@drawable/ic_done_black_24dp"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:focusable="false"
+            android:orientation="horizontal">
+
+            <TextView
+
+                style="@style/Font_padding_margin"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.25"
+                android:background="@drawable/cell_shape"
+                android:gravity="center"
+                android:text="شرح" />
+
+            <TextView
+
+                style="@style/Font_padding_margin"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.25"
+                android:background="@drawable/cell_shape"
+                android:gravity="center"
+                android:text="تعداد" />
+
+            <TextView
+
+                style="@style/Font_padding_margin"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.25"
+                android:background="@drawable/cell_shape"
+                android:gravity="center"
+                android:text="نوع" />
+            -->
+
+            <TextView
+
+                style="@style/Font_padding_margin"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.25"
+                android:background="@drawable/cell_shape"
+                android:gravity="center"
+                android:text="کالا" />
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:orientation="horizontal">
+
+
+        <EditText
+            android:id="@+id/cartable_material_desc_kabl"
+            style="@style/Font_padding_margin"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"
+
+            android:gravity="center" />
+
+        <EditText
+            android:id="@+id/numberofkabl"
+            style="@style/Font_padding_margin"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.15"
+            android:gravity="center"
+            android:inputType="number" />
+        -->
+
+        <Spinner
+            android:id="@+id/cartable_material_kabl"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.30"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/textView22"
+            style="@style/Font_padding_margin"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.30"
+            android:gravity="center"
+            android:text="کابل" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:orientation="horizontal">
+
+
+        <EditText
+            android:id="@+id/cartable_material_desc_vinch"
+            style="@style/Font_padding_margin"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"
+            android:gravity="center" />
+
+        <EditText
+            android:id="@+id/numberofvinch"
+            style="@style/Font_padding_margin"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.15"
+            android:gravity="center"
+            android:inputType="number" />
+        -->
+
+        <Spinner
+            android:id="@+id/cartable_material_vinch"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.30"
+            android:gravity="center" />
+
+        <TextView
+            style="@style/Font_padding_margin"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.30"
+            android:focusable="false"
+            android:gravity="center"
+            android:text="وینچ کلمپ " />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:orientation="horizontal">
+
+
+        <EditText
+            android:id="@+id/cartable_material_desc_clamp_self"
+            style="@style/Font_padding_margin"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"
+            android:gravity="center" />
+
+        <EditText
+            android:id="@+id/numberofclampself"
+            style="@style/Font_padding_margin"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.15"
+            android:gravity="center"
+            android:inputType="number" />
+        -->
+
+        <Spinner
+            android:id="@+id/cartable_material_clamp_self"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.30"
+            android:gravity="center" />
+
+        <TextView
+            style="@style/Font_padding_margin"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.30"
+            android:gravity="center"
+            android:text="کلمپ خودنگه دار" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:orientation="horizontal">
+
+
+        <EditText
+            android:id="@+id/cartable_material_desc_branch_box"
+            style="@style/Font_padding_margin"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"
+            android:gravity="center" />
+
+        <EditText
+            android:id="@+id/numberof_brancgbox"
+            style="@style/Font_padding_margin"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.15"
+            android:gravity="center"
+            android:inputType="number" />
+        -->
+
+        <Spinner
+            android:id="@+id/cartable_material_branch_box"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.30"
+            android:gravity="center" />
+
+        <TextView
+            style="@style/Font_padding_margin"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.30"
+            android:gravity="center"
+            android:text="جعبه انشعاب" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:orientation="horizontal">
+
+
+        <EditText
+            android:id="@+id/cartable_material_desc_takhte_kontor"
+            style="@style/Font_padding_margin"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"
+            android:gravity="center" />
+
+        <EditText
+            android:id="@+id/numberof_takhte_kontor"
+            style="@style/Font_padding_margin"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.15"
+            android:gravity="center"
+            android:inputType="number" />
+        -->
+
+        <Spinner
+            android:id="@+id/cartable_material_takhte_kontor"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.30"
+            android:gravity="center" />
+
+        <TextView
+            style="@style/Font_padding_margin"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.30"
+            android:gravity="center"
+            android:text="تخته کنتور" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:orientation="horizontal">
+
+
+        <EditText
+            android:id="@+id/cartable_material_desc_branch_handle"
+            style="@style/Font_padding_margin"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"
+            android:gravity="center" />
+
+        <EditText
+            android:id="@+id/numberof_branch_handle"
+            style="@style/Font_padding_margin"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.15"
+            android:gravity="center"
+            android:inputType="number" />
+        -->
+
+        <Spinner
+            android:id="@+id/cartable_material_brnach_handle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.30"
+            android:gravity="center" />
+
+        <TextView
+            style="@style/Font_padding_margin"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.30"
+            android:gravity="center"
+            android:text="دستک انشعاب" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:orientation="horizontal">
+
+
+        <EditText
+            android:id="@+id/cartable_material_desc_fioz"
+            style="@style/Font_padding_margin"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"
+            android:gravity="center" />
+
+        <EditText
+            android:id="@+id/numberof_fioz"
+            style="@style/Font_padding_margin"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.15"
+            android:gravity="center"
+            android:inputType="number" />
+        -->
+
+        <Spinner
+            android:id="@+id/cartable_material_fioz"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.30"
+            android:gravity="center" />
+
+        <TextView
+            style="@style/Font_padding_margin"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.30"
+            android:gravity="center"
+            android:text="فیوز" />
+    </LinearLayout>
+    </LinearLayout>
+
+
+</ScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ListView
+            android:id="@+id/collect_tools_list"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:background="@color/list_item_title"
+
+            />
+
+
+</RelativeLayout>
+
+</LinearLayout>
+
+
+
+</ScrollView>
+
+
+

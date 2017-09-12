@@ -1,0 +1,488 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+        <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:background="@drawable/cell_shape"
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:gravity="end"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <Button
+                        android:id="@+id/receive_all_change_branch"
+                        android:text="@string/cartable_recieve_server"
+                        style="@style/Dialog_Button"
+                        android:layout_width="wrap_content" />
+                    <EditText
+                        android:layout_gravity="center"
+                        android:gravity="end"
+                        android:inputType="number"
+                        android:maxLength="15"
+                        android:singleLine="true"
+                        android:id="@+id/create_change_branch_fabrik_number"
+                        style="@style/Font_padding_margin"
+                        android:layout_height="wrap_content"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.7"/>
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="@string/change_branch_fabrik_number"
+                        style="@style/Font_padding_margin"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:id="@+id/textView21" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:gravity="end"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:layout_gravity="center"
+                        android:gravity="end"
+                        android:inputType="number"
+                        android:maxLength="9"
+                        android:singleLine="true"
+                        android:id="@+id/create_change_branch_branch_code"
+                        style="@style/Font_padding_margin"
+                        android:layout_height="wrap_content"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.25"/>
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="رمز"
+                        style="@style/Font_padding_margin"
+                        android:layout_height="wrap_content"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.25"
+                        android:id="@+id/textView18" />
+                    <EditText
+                        android:layout_gravity="center"
+                        android:gravity="end"
+                        android:inputType="number"
+                        android:maxLength="8"
+                        android:singleLine="true"
+                        android:id="@+id/create_change_branch_document_number"
+                        style="@style/Font_padding_margin"
+                        android:layout_height="wrap_content"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.25"/>
+                    <TextView
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="@string/change_branch_doc_number"
+                        style="@style/Font_padding_margin"
+                        android:layout_height="wrap_content"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.25"/>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:gravity="end"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_gravity="center"
+                        android:gravity="start"
+                        android:id="@+id/create_change_branch_name"
+                        style="@style/Font_padding_margin"
+                        android:layout_height="wrap_content"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.25"/>
+                    <TextView
+                        android:layout_gravity="center"
+                        android:text="تعرفه موجود"
+                        style="@style/Font_padding_margin"
+                        android:gravity="center"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.25"
+                        android:layout_height="wrap_content" />
+
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:gravity="end"
+                        android:id="@+id/create_change_branch_old_phase"
+                        style="@style/Font_padding_margin"
+                        android:layout_height="wrap_content"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.25"/>
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="@string/change_branch_old_phase"
+                        style="@style/Font_padding_margin"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.25"
+                        android:layout_height="wrap_content" />
+
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:gravity="end"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_gravity="center"
+                        android:gravity="end"
+                        android:id="@+id/create_change_branch_type_"
+                        style="@style/Font_padding_margin"
+                        android:layout_height="wrap_content"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.25"/>
+                    <TextView
+                        android:layout_gravity="center"
+                        android:text="نوع انشعاب"
+                        style="@style/Font_padding_margin"
+                        android:gravity="center"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.25"
+                        android:layout_height="wrap_content"
+                       />
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:gravity="end"
+                        android:id="@+id/create_change_branch_old_amper"
+                        style="@style/Font_padding_margin"
+                        android:layout_height="wrap_content"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.25"/>
+                    <TextView
+                        android:layout_gravity="center"
+                        android:text="@string/change_branch_old_amper"
+                        style="@style/Font_padding_margin"
+                        android:gravity="center"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.25"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textView19" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:gravity="end"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:inputType="numberDecimal"
+                        android:maxLength="7"
+                        android:singleLine="true"
+                        android:gravity="end"
+                        android:layout_gravity="center"
+                        android:id="@+id/create_change_branch_type_voltage"
+                        style="@style/Font_padding_margin"
+                        android:layout_height="wrap_content"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.25"/>
+                    <TextView
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="نوع ولتاژ"
+                        style="@style/Font_padding_margin"
+                        android:layout_height="wrap_content"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.25"/>
+
+                    <TextView
+                        android:inputType="numberDecimal"
+                        android:maxLength="7"
+                        android:singleLine="true"
+                        android:gravity="end"
+                        android:layout_gravity="center"
+                        android:id="@+id/create_change_branch_old_power"
+                        style="@style/Font_padding_margin"
+                        android:layout_height="wrap_content"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.25"/>
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="@string/change_branch_old_power"
+                        style="@style/Font_padding_margin"
+                        android:layout_height="wrap_content"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.25"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:background="@drawable/cell_shape"
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:gravity="end"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <Spinner
+                        android:layout_gravity="center"
+                        style="@style/Font_padding_margin"
+                        android:id="@+id/create_change_branch_type"
+                        android:layout_height="wrap_content"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.7"/>
+                    <TextView
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="@string/change_branch_type"
+                        style="@style/Font_padding_margin"
+                        android:layout_height="wrap_content"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.3"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:gravity="end"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <Spinner
+                        android:layout_gravity="center"
+                        android:id="@+id/create_change_branch_phase"
+                        style="@style/Font_padding_margin"
+                        android:layout_height="wrap_content"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.7"/>
+                    <TextView
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="@string/change_branch_phase"
+                        style="@style/Font_padding_margin"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.3"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:gravity="end"
+                    android:id="@+id/amper_line"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <Spinner
+                        android:layout_gravity="center"
+                        android:id="@+id/create_change_branch_amp"
+                        style="@style/Font_padding_margin"
+                        android:layout_height="wrap_content"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.7"/>
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:text="@string/change_branch_amper"
+                        style="@style/Font_padding_margin"
+                        android:gravity="center"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.3"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textView28" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:gravity="end"
+                    android:id="@+id/power_line"
+                    android:visibility="gone"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_gravity="center"
+                        android:text="@string/power_unit"
+                        android:inputType="numberDecimal"
+                        style="@style/Font_padding_margin"
+                        android:layout_height="wrap_content"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.2"/>
+                    <EditText
+                        android:inputType="numberDecimal"
+                        android:maxLength="7"
+                        android:singleLine="true"
+                        android:layout_gravity="center"
+                        android:id="@+id/create_change_branch_power"
+                        style="@style/Font_padding_margin"
+                        android:layout_height="wrap_content"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.5"/>
+                    <TextView
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="@string/change_branch_power"
+                        style="@style/Font_padding_margin"
+                        android:layout_height="wrap_content"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.3"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:gravity="end"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <Spinner
+                        android:layout_gravity="center"
+                        android:id="@+id/create_change_branch_tariff"
+                        style="@style/Font_padding_margin"
+                        android:layout_height="wrap_content"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.7"/>
+                    <TextView
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="@string/change_branch_tariff"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.3"
+                        style="@style/Font_padding_margin"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:gravity="end"
+                    android:id="@+id/line4"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <Spinner
+                        android:layout_gravity="center"
+                        android:id="@+id/create_change_branch_voltage"
+                        style="@style/Font_padding_margin"
+                        android:layout_height="wrap_content"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.7"/>
+                    <TextView
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="@string/change_branch_voltage"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.3"
+                        style="@style/Font_padding_margin"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_gravity="end"
+                    android:orientation="horizontal"
+                    style="@style/Font_padding_margin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+
+
+                    <CheckBox
+                        android:id="@+id/change_branch_merge"
+                        android:text="@string/change_branch_merge"
+                        style="@style/Font_padding_margin"
+                        android:gravity="center"
+                        android:layout_marginRight="15dp"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.5"
+                        android:layout_height="wrap_content" />
+
+
+
+                    <CheckBox
+                        android:id="@+id/change_branch_separation"
+                        android:text="@string/change_branch_separation"
+                        style="@style/Font_padding_margin"
+                        android:gravity="center"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.5"
+                        android:layout_marginRight="15dp"
+                        android:layout_height="wrap_content" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal"
+                   >
+
+                    <CheckBox
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_weight=".5"
+                        android:text=" نیاز به تعویض کنتور"
+                        android:layout_marginRight="15dp"
+                        android:id="@+id/changeneeded" />
+
+                    <CheckBox
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".5"
+                        android:gravity="center"
+                        android:text="نیاز به جابجایی"
+                      android:layout_marginRight="15dp"
+                        android:id="@+id/moveneeded" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                    android:id="@+id/endline"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <Button
+                        style="@style/Dialog_Button"
+                        android:id="@+id/create_all_change_branch"
+                        android:text="@string/preferences_register"/>
+                    <Button
+                        style="@style/Dialog_Button"
+                        android:id="@+id/delete_all_change_branch"
+                        android:text="@string/preferences_delete"/>
+                    <Button
+                        style="@style/Dialog_Button"
+                        android:visibility="gone"
+                        android:id="@+id/cancel_all_change_branch"
+                        android:text="@string/preferences_cancel"/>
+                </LinearLayout>
+
+        </LinearLayout>
+</ScrollView>
+
+

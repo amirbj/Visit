@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:clickable="true"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/cartable_change_branch_move"
+            android:background="@drawable/cell_shape_two"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="0.15"
+            android:gravity="center"
+            style="@style/Font_padding_margin"
+            android:text="جابجایی"/>
+        <TextView
+            android:id="@+id/cartable_change_branch_doc_number"
+            android:background="@drawable/cell_shape_two"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="0.15"
+            android:gravity="center"
+            style="@style/Font_padding_margin"
+            android:text="تعرفه"/>
+
+
+
+        <TextView
+            android:id="@+id/cartable_change_branch_phase"
+            android:background="@drawable/cell_shape_two"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="0.35"
+            android:gravity="center"
+            style="@style/Font_padding_margin"
+            android:text="@string/change_branch_phase_amper"/>
+
+        <TextView
+            android:id="@+id/cartable_change_branch_fabrik"
+            android:background="@drawable/cell_shape_two"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="0.2"
+            android:gravity="center"
+            style="@style/Font_padding_margin"
+            android:text="@string/change_branch_fabrik_number"/>
+
+        <TextView
+            android:id="@+id/cartable_change_branch_status"
+            android:background="@drawable/cell_shape_two"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="0.15"
+            android:gravity="center"
+            style="@style/Font_padding_margin"
+            android:text="@string/change_branch_status"/>
+
+    </LinearLayout>
+
+    <ListView
+        android:background="@color/list_item_title"
+        android:id="@+id/visit_place_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

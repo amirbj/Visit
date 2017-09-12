@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="8dp">
+
+            <!--   <LinearLayout
+                   android:id="@+id/line1"
+                   android:orientation="horizontal"
+                   android:gravity="end"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content">
+                   <EditText
+                       android:id="@+id/cartable_new_material_subscrip"
+                       android:gravity="center"
+                       style="@style/Font_padding_margin"
+                       android:singleLine="true"
+                       android:inputType="number"
+                       android:layout_height="wrap_content"
+                       android:layout_width="0dp"
+                       android:layout_weight="0.7"/>
+                   <TextView
+                       android:layout_gravity="center"
+                       android:gravity="center"
+                       android:text="@string/cartable_measurment_subscrip"
+                       style="@style/Font_padding_margin"
+                       android:layout_height="wrap_content"
+                       android:layout_width="0dp"
+                       android:layout_weight="0.3"/>
+
+               </LinearLayout>
+       -->
+            <LinearLayout
+                android:id="@+id/line2"
+                android:orientation="horizontal"
+                android:gravity="end"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Spinner
+                    android:gravity="center"
+                    style="@style/Font_padding_margin"
+                    android:id="@+id/cartable_collect_material_goods"
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.7"/>
+
+                <TextView
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="@string/cartable_measurment_goods"
+                    style="@style/Font_padding_margin"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.3"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+
+                android:orientation="horizontal"
+                android:gravity="end"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <Spinner
+                    android:gravity="center"
+                    style="@style/Font_padding_margin"
+                    android:id="@+id/cartable_collect_material_type"
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.7"/>
+                <TextView
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="نوع"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.3"
+                    style="@style/Font_padding_margin"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/line3"
+                android:orientation="horizontal"
+                android:gravity="end"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text=""
+                    style="@style/Font_padding_margin"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView2" />
+
+                <EditText
+                    android:id="@+id/cartable_collect_material_estimated"
+                    android:gravity="center"
+                    style="@style/Font_padding_margin"
+                    android:singleLine="true"
+                    android:inputType="number"
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.2"/>
+
+                <TextView
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="@string/cartable_measurment_estimated"
+                    style="@style/Font_padding_margin"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.3"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView23" />
+            </LinearLayout>
+
+            <!--     <LinearLayout
+                     android:id="@+id/line4"
+                     android:orientation="horizontal"
+                     android:gravity="end"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content">
+                    <Spinner
+                         android:gravity="center"
+                         style="@style/Font_padding_margin"
+                         android:id="@+id/cartable_new_material_unit"
+                         android:layout_height="wrap_content"
+                         android:layout_width="0dp"
+                         android:layout_weight="0.7"/>
+                     <TextView
+                         android:layout_gravity="center"
+                         android:gravity="center"
+                         android:text="@string/cartable_measurment_unit"
+                         android:layout_width="0dp"
+                         android:layout_weight="0.3"
+                         style="@style/Font_padding_margin"
+                         android:layout_height="wrap_content" />
+                 </LinearLayout>
+                 -->
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:gravity="end"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <EditText
+
+                    android:gravity="center"
+                    android:id="@+id/cartable_collect_material_description"
+                    style="@style/Font_padding_margin"
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.7"/>
+
+                <TextView
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="شرح"
+                    style="@style/Font_padding_margin"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.3"
+                    android:layout_height="wrap_content"
+                  />
+            </LinearLayout>
+
+            <!--     <LinearLayout
+                     android:id="@+id/line6"
+                     android:orientation="horizontal"
+                     android:gravity="end"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content">
+                     <Spinner
+                         android:gravity="center"
+                         style="@style/Font_padding_margin"
+                         android:id="@+id/cartable_new_material_status"
+                         android:layout_height="wrap_content"
+                         android:layout_width="0dp"
+                         android:layout_weight="0.7"/>
+                     <TextView
+                         android:layout_gravity="center"
+                         android:gravity="center"
+                         android:text="@string/cartable_measurment_status"
+                         android:layout_width="0dp"
+                         android:layout_weight="0.3"
+                         style="@style/Font_padding_margin"
+                         android:layout_height="wrap_content" />
+                 </LinearLayout>
+                 -->
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/endline"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <Button
+                style="@style/Dialog_Button"
+                android:id="@+id/create_all_new_material"
+                android:text="@string/preferences_register"/>
+            <Button
+                style="@style/Dialog_Button"
+                android:id="@+id/delete_all_new_material"
+                android:text="@string/preferences_delete"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
+

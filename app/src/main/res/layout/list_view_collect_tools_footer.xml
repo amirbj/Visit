@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:orientation="horizontal">
+
+
+        <EditText
+            android:id="@+id/cartable_material_responsible_kabl"
+            style="@style/Font_padding_margin"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"
+            android:gravity="center" />
+
+        <EditText
+            android:id="@+id/numberofkabl"
+            style="@style/Font_padding_margin"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.15"
+            android:gravity="center"
+            android:inputType="number" />
+        -->
+
+        <Spinner
+            android:id="@+id/cartable_material_kabl"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.30"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/textView22"
+            style="@style/Font_padding_margin"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.30"
+            android:gravity="center"
+            android:text="کابل" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:orientation="horizontal">
+
+
+        <EditText
+            android:id="@+id/cartable_material_responsible_vinch"
+            style="@style/Font_padding_margin"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"
+            android:gravity="center" />
+
+        <EditText
+            android:id="@+id/numberofvinch"
+            style="@style/Font_padding_margin"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.15"
+            android:gravity="center"
+            android:inputType="number" />
+        -->
+
+        <Spinner
+            android:id="@+id/cartable_material_vinch"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.30"
+            android:gravity="center" />
+
+        <TextView
+            style="@style/Font_padding_margin"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.30"
+            android:gravity="center"
+            android:text="وینچ کلمپ " />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:orientation="horizontal">
+
+
+        <EditText
+            android:id="@+id/cartable_material_responsible_clamp_self"
+            style="@style/Font_padding_margin"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"
+            android:gravity="center" />
+
+        <EditText
+            android:id="@+id/numberofclampself"
+            style="@style/Font_padding_margin"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.15"
+            android:gravity="center"
+            android:inputType="number" />
+        -->
+
+        <Spinner
+            android:id="@+id/cartable_material_clamp_self"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.30"
+            android:gravity="center" />
+
+        <TextView
+            style="@style/Font_padding_margin"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.30"
+            android:gravity="center"
+            android:text="کلمپ خودنگه دار" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:orientation="horizontal">
+
+
+        <EditText
+            android:id="@+id/cartable_material_responsible_branch_box"
+            style="@style/Font_padding_margin"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"
+            android:gravity="center" />
+
+        <EditText
+            android:id="@+id/numberof_brancgbox"
+            style="@style/Font_padding_margin"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.15"
+            android:gravity="center"
+            android:inputType="number" />
+        -->
+
+        <Spinner
+            android:id="@+id/cartable_material_branch_box"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.30"
+            android:gravity="center" />
+
+        <TextView
+            style="@style/Font_padding_margin"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.30"
+            android:gravity="center"
+            android:text="جعبه انشعاب" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:orientation="horizontal">
+
+
+        <EditText
+            android:id="@+id/cartable_material_responsible_takhte_kontor"
+            style="@style/Font_padding_margin"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"
+            android:gravity="center" />
+
+        <EditText
+            android:id="@+id/numberof_takhte_kontor"
+            style="@style/Font_padding_margin"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.15"
+            android:gravity="center"
+            android:inputType="number" />
+        -->
+
+        <Spinner
+            android:id="@+id/cartable_material_takhte_kontor"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.30"
+            android:gravity="center" />
+
+        <TextView
+            style="@style/Font_padding_margin"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.30"
+            android:gravity="center"
+            android:text="تخته کنتور" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:orientation="horizontal">
+
+
+        <EditText
+            android:id="@+id/cartable_material_responsible_branch_handle"
+            style="@style/Font_padding_margin"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"
+            android:gravity="center" />
+
+        <EditText
+            android:id="@+id/numberof_branch_handle"
+            style="@style/Font_padding_margin"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.15"
+            android:gravity="center"
+            android:inputType="number" />
+        -->
+
+        <Spinner
+            android:id="@+id/cartable_material_brnach_handle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.30"
+            android:gravity="center" />
+
+        <TextView
+            style="@style/Font_padding_margin"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.30"
+            android:gravity="center"
+            android:text="دستک انشعاب" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:orientation="horizontal">
+
+
+        <EditText
+            android:id="@+id/cartable_material_responsible_fioz"
+            style="@style/Font_padding_margin"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"
+            android:gravity="center" />
+
+        <EditText
+            android:id="@+id/numberof_fioz"
+            style="@style/Font_padding_margin"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.15"
+            android:gravity="center"
+            android:inputType="number" />
+        -->
+
+        <Spinner
+            android:id="@+id/cartable_material_fioz"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.30"
+            android:gravity="center" />
+
+        <TextView
+            style="@style/Font_padding_margin"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.30"
+            android:gravity="center"
+            android:text="فیوز" />
+    </LinearLayout>
+</LinearLayout>
+

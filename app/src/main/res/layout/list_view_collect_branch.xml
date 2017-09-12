@@ -1,0 +1,50 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/wholelist"
+    android:divider="#000"
+    android:dividerHeight="1dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <CheckBox
+            style="@style/Font_padding_margin"
+            android:id="@+id/collect_branch_edgham"
+            android:gravity="center"
+            android:clickable="false"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:layout_weight="0.2"/>
+
+
+
+        <TextView
+            style="@style/Font_padding_margin"
+            android:id="@+id/collect_branch_phase"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="0.25"/>
+
+        <TextView
+            style="@style/Font_padding_margin"
+            android:id="@+id/collect_branch_document_number"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="0.2"/>
+
+        <TextView
+            android:id="@+id/collect_branch_fabrik"
+            style="@style/Font_padding_margin"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="0.35"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,89 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>گزارش میله ای افقی</title>
+        <meta name="HandheldFriendly" content="True">
+        <meta name="MobileOptimized" content="320">
+        <meta name="viewport" content="width=device-width">		
+		<script type="text/javascript" src="../js/jquery-1.7.2.js"></script>
+		<script type="text/javascript" src="../js/highcharts.js"></script>
+		<script type="text/javascript" src="../js/exporting.js"></script>
+		<script type="text/javascript">
+		
+			var chart;
+			$(document).ready(function() {
+				  chart = new Highcharts.Chart({
+					  chart: {
+						  renderTo: 'container1',
+						  defaultSeriesType: 'bar'
+					  },
+					  title: {
+						  text: 'گزارش سالانه فروش'
+					  },
+					  subtitle: {
+						  text: 'تجارت اول الکترونیک'
+					  },
+					  xAxis: {
+						  categories: ['تهران', 'اصفهان', 'شیراز', 'مشهد', 'یزد'],
+						  title: {
+							  text: null
+						  }
+					  },
+					  yAxis: {
+						  min: 0,
+						  title: {
+							  text: 'تعداد فروش',
+							  align: 'high'
+						  }
+					  },
+					  tooltip: {
+						  formatter: function () {
+							  return '' +
+								   this.series.name + ': ' + this.y + ' عدد';
+						  }
+					  },
+					  plotOptions: {
+						  bar: {
+							  dataLabels: {
+								  enabled: true
+							  }
+						  }
+					  },
+					  legend: {
+						  layout: 'vertical',
+						  align: 'right',
+						  verticalAlign: 'top',
+						  x: -100,
+						  y: 100,
+						  floating: true,
+						  borderWidth: 1,
+						  backgroundColor: '#FFFFFF',
+						  shadow: true
+					  },
+					  credits: {
+						  enabled: false
+					  },
+					  series: [{
+						  name: 'بهار 92',
+						  data: [107, 31, 635, 203, 2]
+					  }, {
+						  name: 'تابستان 92',
+						  data: [133, 156, 947, 408, 6]
+					  }, {
+						  name: 'پائیز 92',
+						  data: [973, 914, 854, 732, 34]
+					  }, {
+						  name: 'زمستان 92',
+						  data: [973, 914, 954, 732, 34]
+					  }]
+				  });
+			});
+				
+		</script>
+		
+	</head>
+	<body>
+		<div id="container1"/>                  
+	</body>
+</html>

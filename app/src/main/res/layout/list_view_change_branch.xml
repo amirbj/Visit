@@ -1,0 +1,110 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/wholelist"
+    android:divider="#000"
+    android:dividerHeight="1dp">
+
+    <LinearLayout
+        android:id="@+id/available"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/change_branch_move"
+            style="@style/Font_padding_margin"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="0.1"/>
+        <TextView
+            android:id="@+id/change_branch_tariffe"
+            style="@style/Font_padding_margin"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="0.2"/>
+
+
+
+        <TextView
+            android:id="@+id/change_branch_phase"
+            style="@style/Font_padding_margin"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="0.3"/>
+
+
+        <TextView
+            android:id="@+id/change_branch_document_number"
+            style="@style/Font_padding_margin"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="0.2"/>
+
+
+
+        <TextView
+            android:id="@+id/change_branch_status"
+            style="@style/Font_padding_margin"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="0.15"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/change"
+        android:layout_below="@id/available"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <CheckBox
+            android:id="@+id/new_change_branch_move"
+            style="@style/Font_padding_margin"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:focusable="false"
+            android:clickable="false"
+            android:focusableInTouchMode="false"
+            android:layout_weight="0.1"/>
+        <TextView
+            android:id="@+id/new_change_branch_tariffe"
+            style="@style/Font_padding_margin"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="0.2"/>
+
+
+
+        <TextView
+            android:id="@+id/new_change_branch_phase"
+            style="@style/Font_padding_margin"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="0.3"/>
+
+        <TextView
+            android:id="@+id/new_change_branch_document_number"
+            style="@style/Font_padding_margin"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="0.2"/>
+
+
+        <TextView
+            android:id="@+id/new_change_branch_status"
+            style="@style/Font_padding_margin"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="0.15"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

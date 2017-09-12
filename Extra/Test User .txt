@@ -1,0 +1,14 @@
+Karaj
+server: 79.127.106.213
+port: 8046
+
+User: andcadmin
+Pass: 123321
+
+Ghazvin
+server: 217.218.237.151
+port: 8092
+
+User: nmaj
+Pass: 123
+

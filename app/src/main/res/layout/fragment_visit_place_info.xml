@@ -1,0 +1,615 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end">
+
+            <TextView
+                android:id="@+id/place_info_visit_date"
+                style="@style/Font_padding_margin"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.25"
+                android:background="@drawable/cell_shape"
+                android:gravity="center" />
+
+            <TextView
+                style="@style/Font_padding_margin"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.2"
+                android:text="@string/place_info_visit_date" />
+
+            <TextView
+                android:id="@+id/place_info_name"
+                style="@style/Font_padding_margin"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.4"
+                android:gravity="center"
+                android:inputType="number" />
+
+            <TextView
+                style="@style/Font_padding_margin"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.15"
+                android:text="متقاضی" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/dark_gray"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="وضعیت ملک"
+                android:textStyle="bold"
+                />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end">
+
+            <EditText
+                android:id="@+id/place_info_zirbana"
+                style="@style/Font_padding_margin"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.25"
+                android:background="@drawable/cell_shape"
+                android:gravity="center"
+                android:inputType="numberDecimal" />
+
+            <TextView
+                style="@style/Font_padding_margin"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.25"
+                android:text="مساحت زیربنا" />
+
+            <EditText
+                android:id="@+id/place_info_total_area"
+                style="@style/Font_padding_margin"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.25"
+                android:background="@drawable/cell_shape"
+                android:gravity="center"
+                android:inputType="numberDecimal" />
+
+            <TextView
+                android:id="@+id/textView15"
+                style="@style/Font_padding_margin"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.25"
+                android:text="مساحت کل" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end">
+
+            <EditText
+                android:id="@+id/place_info_unit_count"
+                style="@style/Font_padding_margin"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.25"
+                android:background="@drawable/cell_shape"
+                android:gravity="center"
+                android:inputType="number" />
+
+            <TextView
+                android:id="@+id/textView12"
+                style="@style/Font_padding_margin"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.25"
+                android:text="تعدادکل واحدها" />
+
+            <EditText
+                android:id="@+id/place_info_floor_count"
+                style="@style/Font_padding_margin"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.25"
+                android:background="@drawable/cell_shape"
+                android:gravity="center"
+                android:inputType="number" />
+
+            <TextView
+                style="@style/Font_padding_margin"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.25"
+                android:text="تعداد طبقات" />
+
+        </LinearLayout>
+
+        <RadioGroup
+            android:id="@+id/place_info_shomali_jonubi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:orientation="horizontal">
+
+            <Spinner
+                android:id="@+id/place_info_sharak_sanati"
+                style="@style/Font_padding_margin"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.4" />
+
+            <TextView
+                android:id="@+id/textView13"
+                style="@style/Font_padding_margin"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="شهرک صنعتی"
+                android:layout_weight="0.3" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="جنوبی"
+                android:layout_marginLeft="20dp"
+
+                android:id="@+id/textView27" />
+
+            <RadioButton
+                android:id="@+id/place_info_jonubi"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_gravity="center"
+                android:gravity="center" />
+
+
+            <TextView
+                style="@style/Font_padding_margin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="شمالی"
+                android:id="@+id/textView11" />
+
+            <RadioButton
+
+                android:id="@+id/place_info_shomali"
+                style="@style/Font_padding_margin"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:layout_height="25dp" />
+
+        </RadioGroup>
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/dark_gray"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="وضعیت ساخت"
+                android:textStyle="bold"
+                />
+
+
+        </LinearLayout>
+
+        <RadioGroup
+            android:id="@+id/place_info_vaziat_sakht"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="قدیمی"
+
+                />
+
+            <RadioButton
+                android:id="@+id/place_info_radio_old"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center"
+                android:layout_marginRight="20dp"
+                android:layout_weight=".25"
+                android:gravity="center"
+
+                />
+
+
+            <TextView
+                style="@style/Font_padding_margin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="جدید ساخت"
+
+                android:id="@+id/textView20" />
+
+            <RadioButton
+
+                android:id="@+id/place_info_radio_new"
+                style="@style/Font_padding_margin"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_weight=".25" />
+
+
+            <TextView
+                style="@style/Font_padding_margin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="در حال ساخت"
+
+                android:id="@+id/textView" />
+
+            <RadioButton
+
+                android:id="@+id/place_info_radio_darhalesakht"
+                style="@style/Font_padding_margin"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_weight=".25" />
+
+
+            <TextView
+                style="@style/Font_padding_margin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="فاقد بنا"
+
+                />
+
+            <RadioButton
+
+                android:id="@+id/place_info_radio_faghed_bana"
+                style="@style/Font_padding_margin"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_weight=".25" />
+        </RadioGroup>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/dark_gray"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="وضعیت محدوده"
+                android:textStyle="bold"
+
+                />
+
+
+        </LinearLayout>
+
+        <RadioGroup
+            android:id="@+id/place_info_vaziat_mahdude"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="خارج محدوده"
+
+                />
+
+            <RadioButton
+
+                android:id="@+id/place_info_radio_kharejmahdude"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_marginRight="20dp"
+
+                />
+
+            <TextView
+                style="@style/Font_padding_margin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="داخل محدوده"
+
+                />
+
+            <RadioButton
+
+                android:id="@+id/place_info_radio_dakhelmahdude"
+                style="@style/Font_padding_margin"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+
+
+                />
+        </RadioGroup>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end">
+
+            <EditText
+                android:id="@+id/place_info_familNo"
+                style="@style/Font_padding_margin"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.1"
+                android:gravity="center"
+                android:background="@drawable/cell_shape"
+                android:inputType="number" />
+
+
+            <TextView
+                android:id="@+id/textView16"
+                style="@style/Font_padding_margin"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.2"
+                android:text="تعداد خانوار" />
+
+            <Spinner
+                android:id="@+id/place_info_cities"
+                style="@style/Font_padding_margin"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.6" />
+
+            <TextView
+                android:id="@+id/textView14"
+                style="@style/Font_padding_margin"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.1"
+                android:text="@string/place_info_section" />
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end">
+
+            <TextView
+                style="@style/Font_padding_margin"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.25"
+                android:text="بومی روستا" />
+
+            <CheckBox
+                android:id="@+id/place_info_village_box"
+                style="@style/Font_padding_margin"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.25" />
+
+            <Spinner
+                android:id="@+id/place_info_village_list"
+                style="@style/Font_padding_margin"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.4" />
+
+            <TextView
+
+                style="@style/Font_padding_margin"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.1"
+                android:text="روستا" />
+
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/dark_gray"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="اشتراک های مجاور"
+                android:id="@+id/textView17" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end">
+
+            <EditText
+                android:id="@+id/place_info_eshterak_chap"
+                style="@style/Font_padding_margin"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.3"
+                android:hint="چپ"
+                android:background="@drawable/cell_shape"
+                android:gravity="center"
+                android:inputType="number" />
+
+
+            <EditText
+                android:id="@+id/place_info_eshterak_rast"
+                style="@style/Font_padding_margin"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.3"
+                android:background="@drawable/cell_shape"
+                android:gravity="center"
+                android:hint="راست"
+                android:inputType="number" />
+
+            <TextView
+                style="@style/Font_padding_margin"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.2"
+                android:text="اشتراک مجاور"
+                android:id="@+id/textView3" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/dark_gray"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="مختصات جغرافیایی"
+               />
+
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end">
+
+            <EditText
+                android:id="@+id/place_info_lat"
+                style="@style/Font_padding_margin"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.25"
+                android:background="@drawable/cell_shape"
+                android:gravity="center" />
+
+            <TextView
+                style="@style/Font_padding_margin"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.25"
+                android:text="@string/place_info_lat" />
+
+            <EditText
+                android:id="@+id/place_info_long"
+                style="@style/Font_padding_margin"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.25"
+                android:background="@drawable/cell_shape"
+                android:gravity="center" />
+
+            <TextView
+                style="@style/Font_padding_margin"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.25"
+                android:text="@string/place_info_long"
+                android:id="@+id/textView7" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/place_info_mark_map"
+                style="@style/Fragment_Button"
+                android:drawableRight="@android:drawable/ic_menu_myplaces"
+                android:text="@string/place_info_mark_map" />
+
+            <Button
+                android:id="@+id/place_info_show_map"
+                style="@style/Fragment_Button"
+                android:drawableRight="@android:drawable/ic_menu_mapmode"
+                android:text="@string/place_info_show_map" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

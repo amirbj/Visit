@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_content"
+    android:orientation="vertical"
+    android:layoutDirection="rtl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/toolbar_main"
+        layout="@layout/toolbar_main"/>
+
+<android.support.v4.widget.DrawerLayout
+    android:id="@+id/drawer_view"
+    android:layout_gravity="right"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+        <!-- The ActionBar displayed at the top -->
+
+
+
+        <!-- FrameLayout to display Fragments -->
+        <FrameLayout
+            android:id="@+id/frame_container"
+            android:layout_width="match_parent"
+            android:layoutDirection="ltr"
+            android:layout_height="match_parent">
+        </FrameLayout>
+
+
+    <!-- Listview to display slider menu -->
+    <ListView
+        android:id="@+id/list_slidermenu"
+        android:layout_width="280dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="right"
+        android:layoutDirection="locale"
+        android:choiceMode="singleChoice"
+        android:divider="@null"
+        android:background="@android:color/white"/>
+</android.support.v4.widget.DrawerLayout>
+    </LinearLayout>

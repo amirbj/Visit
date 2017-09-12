@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_root"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:gravity="right"
+    android:padding="10dp" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="کد شناسایی جدید"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:id="@+id/id_layout"
+        android:layout_gravity="center_horizontal">
+
+        <EditText
+            style="@style/send_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:textColor="#ff8d0024"
+            android:ems="3"
+            android:id="@+id/part1"
+            android:layout_marginLeft="10dp"
+            android:textAlignment="center"
+            android:selectAllOnFocus="true"
+            android:nextFocusDown="@+id/txtMax"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="/"
+            android:id="@+id/textView6" />
+
+        <EditText
+            style="@style/send_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:textColor="#ff8d0024"
+            android:text=""
+            android:ems="3"
+            android:id="@+id/part2"
+            android:textAlignment="center"
+            android:selectAllOnFocus="true"
+            android:nextFocusDown="@+id/part3"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="/"
+            android:id="@+id/textView8" />
+
+        <EditText
+            style="@style/send_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:textColor="#ff8d0024"
+            android:text=""
+            android:ems="3"
+            android:id="@+id/part3"
+            android:textAlignment="center"
+            android:selectAllOnFocus="true"
+            android:nextFocusDown="@+id/part4"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="/"
+            android:id="@+id/textView9" />
+
+        <EditText
+            style="@style/send_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:textColor="#ff8d0024"
+            android:text=""
+            android:ems="3"
+            android:id="@+id/part4"
+            android:selectAllOnFocus="true"
+            android:textAlignment="center" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_identity"
+        android:id="@+id/textView10"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="توضیحات"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/editTextDialogUserInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right">
+        <requestFocus />
+    </EditText>
+
+</LinearLayout>

@@ -1,0 +1,60 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="15dp"
+    android:padding="@dimen/padding_value_1"
+    android:orientation="horizontal"
+    android:gravity="right"
+    android:focusable="false">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right|center_vertical"
+        android:layout_marginLeft="@dimen/padding_value_3"
+        android:layout_marginRight="@dimen/padding_value_3">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_weight="0.9">
+
+            <TextView
+                android:id="@+id/txtTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="12dp"
+                android:gravity="right"
+                android:textColor="@android:color/black"
+                android:singleLine="true"
+                android:text="مصرف بالای کولر گازی" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:layout_weight="0.1">
+
+            <TextView
+                android:id="@+id/txtIndex"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="12dp"
+                android:gravity="right"
+                android:textColor="@android:color/black"
+                android:singleLine="true"
+                android:textAppearance="?android:attr/textAppearanceLargeInverse"
+                android:text="17"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

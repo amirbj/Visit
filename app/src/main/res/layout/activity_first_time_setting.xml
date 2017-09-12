@@ -1,0 +1,84 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+
+            <EditText
+                style="@style/Font_padding_margin"
+                android:id="@+id/etIP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:singleLine="true"
+                android:ems="10"
+                android:inputType="textUri" />
+
+            <TextView
+                android:id="@+id/tv1"
+                style="@style/Font_padding_margin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="@string/webservices_address"
+                android:singleLine="true"
+                android:ems="4"
+                android:gravity="center" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_below="@id/linearLayout1"
+            android:layout_alignRight="@id/linearLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+
+            <EditText
+                style="@style/Font_padding_margin"
+                android:id="@+id/etPort"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="4"
+                android:ems="4" />
+
+            <TextView
+                style="@style/Font_padding_margin"
+                android:hint="@string/port"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="4"
+                android:gravity="center" />
+        </LinearLayout>
+
+            <Button
+                style="@style/Dialog_Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linearLayout2"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:id="@+id/btnOk"
+                android:text="@string/confirm"
+                android:onClick="confirm" />
+    </RelativeLayout>
+</LinearLayout>

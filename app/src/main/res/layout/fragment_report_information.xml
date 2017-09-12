@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:background="@drawable/light_gray">
+
+    <RelativeLayout
+        android:id="@+id/information"
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TableLayout
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TableRow>
+                <EditText
+                    android:id="@+id/from_date"
+                    android:clickable="true"
+                    android:focusable="false"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ff565656"
+                    android:textColorHint="#ff747474"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16dp"
+                    android:textColor="#ff565656"
+                    android:text="@string/from_date"/>
+            </TableRow>
+            <TableRow>
+                <EditText
+                    android:id="@+id/to_date"
+                    android:clickable="true"
+                    android:focusable="false"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ff565656"
+                    android:textColorHint="#ff747474"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ff565656"
+                    android:textSize="16dp"
+                    android:text="@string/to_date"/>
+            </TableRow>
+            <TableRow
+                android:gravity="center_horizontal">
+                <Button android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/searchbtn"
+                    android:text="@string/search"
+                    android:layout_marginTop="10dp"/>
+            </TableRow>
+        </TableLayout>
+    </RelativeLayout>
+
+</LinearLayout>

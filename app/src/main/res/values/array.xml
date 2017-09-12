@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="nav_drawer_items">
+        <item> نرم افزار بازدید از محل انشعاب </item>
+        <item> تنظیمات </item>
+        <item> بروز رسانی نقشه</item>
+        <item> بروز رسانی نرم افزار</item>
+        <item> بروز رسانی اطلاعات پایه</item>
+        <item>موجودی اینترنت</item>
+        <item>راهنما</item>
+        <item>درباره ما</item>
+        <item> خروج </item>
+    </string-array>
+
+    <!-- Nav Drawer List Item Icons -->
+    <!-- Keep them in order as the titles are in -->
+    <array name="nav_drawer_icons">
+        <item>@drawable/ic_drawer_cartable</item>
+        <item>@drawable/ic_drawer_settings</item>
+        <item>@drawable/ic_drawer_map1</item>
+        <item>@drawable/ic_drawer_software_update</item>
+        <item>@drawable/ic_drawer_data_update</item>
+        <item>@drawable/ic_drawer_sim_card</item>
+        <item>@drawable/ic_drawer_info</item>
+        <item>@drawable/ic_logo_about</item>
+        <item>@drawable/ic_drawer_exit</item>
+
+    </array>
+
+    <string-array name="new_branch_phase_array">
+        <item>1</item>
+        <item>3</item>
+    </string-array>
+
+    <string-array name="new_branch_tariff_array">
+        <item>خانگی</item>
+        <item>عمومی</item>
+        <item>کشاورزی</item>
+        <item>صنعتی</item>
+        <item>سایر</item>
+    </string-array>
+
+    <string-array name="new_branch_geo_array">
+        <item>داخل محدوده</item>
+        <item>خارج محدوده</item>
+    </string-array>
+
+    <string-array name="new_branch_type_array">
+        <item>عادی</item>
+        <item>دیماندی</item>
+    </string-array>
+
+    <string-array name="new_branch_voltage_array">
+        <item>ثانویه</item>
+        <item>اولیه</item>
+    </string-array>
+
+    <string-array name="new_branch_trf_type_array">
+        <item>دائم</item>
+        <item>ازاد</item>
+    </string-array>
+
+    <string-array name="collect_branch_branch_status_array">
+        <item>دائم</item>
+        <item>موقت</item>
+    </string-array>
+<string-array name="responsible_item">
+
+    <item>متقاضی</item>
+    <item>شرکت</item>
+
+
+</string-array>
+    <string-array name="electric_supply_not_possible_due_to_array">
+        <item> قرار داشتن در حریم </item>
+        <item> وجود موانع غیر قابل رفع </item>
+        <item> وجود انشعاب دیگر در محل </item>
+        <item> عدم وجود امکانات </item>
+        <item> بدهکار میباشد </item>
+        <item> نیاز به تهیه طرح </item>
+        <item> سایر موارد </item>
+    </string-array>
+
+    <string-array name="new_branch_amper_array">
+        <item> 32 </item>
+        <item> 25 </item>
+        <item>15</item>
+        <item>10</item>
+        <item>5</item>
+    </string-array>
+
+    <string-array name="new_material_status_array">
+        <item>نصب</item>
+        <item>جمع اوری</item>
+    </string-array>
+    <string-array name="kontor_type">
+        <item> </item>
+        <item>کنتور تک فاز</item>
+        <item>قاب کنتور</item>
+        <item>کنتور سه فاز</item>
+        <item>کنتور دیماندی ثانویه</item>
+    </string-array>
+
+    <string-array name="cable_type">
+        <item> </item>
+        <item>کابل 2*6</item>
+        <item>کابل 4*6</item>
+        <item>کابل 4*10</item>
+        <item>کابل 16*4</item>
+    </string-array>
+
+    <string-array name="vinch_type">
+        <item> </item>
+        <item>کلید مینیاتوری تک فاز</item>
+        <item>کلید مینیاتوری سه فاز</item>
+        <item>وینچ کلمپ</item>
+
+    </string-array>
+
+    <string-array name="ClampSelf_type">
+        <item> </item>
+        <item>کلمپ انشعاب</item>
+    </string-array>
+
+    <string-array name="boxbranch_type">
+        <item> </item>
+        <item>جعبه انشعاب 7*32</item>
+
+    </string-array>
+
+<string-array name="takhtekontor_type">
+    <item> </item>
+    <item>دم خوکی</item>
+</string-array>
+
+    <string-array name="branchHandle_type">
+        <item> </item>
+        <item>دستک شمالی</item>
+        <item>دستک جنوبی</item>
+    </string-array>
+    <string-array name="goods_list">
+        <item>کابل </item>
+        <item>وینچ کلمپ</item>
+        <item>کلمپ خودنگه دار</item>
+        <item>جعبه انشعاب</item>
+        <item>تخته کنتور</item>
+        <item>دستک انشعاب</item>
+        <item>کلید محدود کننده</item>
+
+    </string-array>
+
+    <string-array name="fioz_type">
+        <item> </item>
+        <item>قاب فیوز</item>
+        <item>جعبه فیوز 4*32</item>
+
+    </string-array>
+    <string-array name="cartable_number">
+        <item>تمام موارد</item>
+        <item>ثبت شده</item>
+        <item>ارسال شده</item>
+        <item>باقی مانده</item>
+
+
+    </string-array>
+
+    <string-array name="alphabet">
+        <item>آ</item>
+        <item>ا</item>
+        <item>ب</item>
+        <item>پ</item>
+        <item>ت</item>
+        <item>ث</item>
+        <item>ج</item>
+        <item>چ</item>
+        <item>ح</item>
+        <item>خ</item>
+        <item>د</item>
+        <item>ذ</item>
+        <item>ر</item>
+        <item>ز</item>
+        <item>ژ</item>
+        <item>س</item>
+        <item>ش</item>
+        <item>ص</item>
+        <item>ض</item>
+        <item>ط</item>
+        <item>ظ</item>
+        <item>ع</item>
+        <item>غ</item>
+        <item>ف</item>
+        <item>ق</item>
+        <item>ک</item>
+        <item>گ</item>
+        <item>ل</item>
+        <item>م</item>
+        <item>ن</item>
+        <item>و</item>
+        <item>ه</item>
+        <item>ی</item>
+    </string-array>
+
+</resources>

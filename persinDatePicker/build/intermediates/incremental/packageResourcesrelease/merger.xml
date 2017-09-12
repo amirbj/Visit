@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="main"><source path="E:\Bazdid\Bazdid\persinDatePicker\src\main\res"><file name="sl_persian_date_picker" path="E:\Bazdid\Bazdid\persinDatePicker\src\main\res\layout\sl_persian_date_picker.xml" qualifiers="" type="layout"/><file path="E:\Bazdid\Bazdid\persinDatePicker\src\main\res\values\attrs.xml" qualifiers=""><declare-styleable name="PersianDatePicker">
+        <attr format="integer" name="minYear"/>
+        <attr format="integer" name="maxYear"/>
+        <attr format="integer" name="selectedYear"/>
+        <attr format="integer" name="selectedMonth"/>
+        <attr format="integer" name="selectedDay"/>
+        <attr format="boolean" name="displayMonthNames"/>
+        <attr format="integer" name="yearRange"/>
+    </declare-styleable></file></source><source path="E:\Bazdid\Bazdid\persinDatePicker\build\generated\res\rs\release"/><source path="E:\Bazdid\Bazdid\persinDatePicker\build\generated\res\resValues\release"/></dataSet><dataSet config="release"><source path="E:\Bazdid\Bazdid\persinDatePicker\src\release\res"/></dataSet><mergedItems><configuration qualifiers=""><declare-styleable name="PersianDatePicker"><attr format="integer" name="minYear"/><attr format="integer" name="maxYear"/><attr format="integer" name="selectedYear"/><attr format="integer" name="selectedMonth"/><attr format="integer" name="selectedDay"/><attr format="boolean" name="displayMonthNames"/><attr format="integer" name="yearRange"/></declare-styleable></configuration></mergedItems></merger>

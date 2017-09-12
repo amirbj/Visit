@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:layout_gravity="end"
+            android:background="#ffffff"
+            android:gravity="end"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_height="0dp"
+                android:layout_weight="0.33"
+                android:layout_width="match_parent">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_weight="0.15"
+                    android:layout_height="0dp"
+                    android:gravity="center_vertical"
+                    android:background="@android:drawable/bottom_bar"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/custinfo_label_2"
+                        android:text="@string/exceptions_groups"
+                        android:id="@+id/textView2"
+                        android:layout_gravity="center_horizontal"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="fill_parent"
+                    android:gravity="clip_horizontal"
+                    android:layout_weight="0.85"
+                    android:layout_height="0dp"
+                    android:background="@android:drawable/picture_frame">
+
+                    <ListView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/lvGroups"
+                        android:layout_gravity="center_vertical"
+                        android:focusable="true"
+                        android:choiceMode="singleChoice"
+                        android:clickable="true"
+                        android:listSelector="@android:color/holo_blue_dark" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_height="0dp"
+                android:layout_weight="0.33"
+                android:layout_width="match_parent">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_weight="0.15"
+                    android:layout_height="0dp"
+                    android:gravity="center_vertical"
+                    android:background="@android:drawable/bottom_bar"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginLeft="2dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/custinfo_label_2"
+                        android:text="@string/exceptions_list"
+                        android:id="@+id/textView4"
+                        android:layout_gravity="center_horizontal"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_weight="0.85"
+                    android:layout_height="0dp"
+                    android:background="@android:drawable/picture_frame">
+
+                    <ListView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/lvList"
+                        android:layout_gravity="right"
+                        android:focusable="true"
+                        android:choiceMode="singleChoice"
+                        android:clickable="true"
+                        android:listSelector="@android:color/holo_blue_dark" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_height="0dp"
+                android:layout_weight="0.33"
+                android:layout_width="match_parent">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_weight="0.15"
+                    android:layout_height="0dp"
+                    android:gravity="center_vertical"
+                    android:background="@android:drawable/bottom_bar"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginLeft="2dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/custinfo_label_2"
+                        android:text="@string/selected_exception"
+                        android:id="@+id/textView5"
+                        android:layout_gravity="center_horizontal"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_weight="0.85"
+                    android:layout_height="0dp"
+                    android:background="@android:drawable/picture_frame">
+
+                    <ListView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/lvSelected"
+                        android:layout_gravity="right"
+                        android:focusable="true"
+                        android:clickable="true"
+                        android:choiceMode="singleChoice"
+                        android:listSelector="@android:color/holo_blue_dark" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+</FrameLayout>
+

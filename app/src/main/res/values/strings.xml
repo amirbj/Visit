@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">بازدید از محل v1.0</string>
+    <string name="Downloading_data"> دریافت اطلاعات </string>
+    <string name="datePicker">انتخاب زمان</string>
+    <string name="menu_upload_all">انتخاب همه کارتابل های بازدید شده</string>
+    <string name="menu_unvisit">نشانه گذاری به عنوان بازدید نشده</string>
+    <string name="menu_restore">بازگشت به حالت ابتدایی</string>
+
+
+    <!-- Alert Dialogs -->
+    <string name="dialog_update_title">به روز رسانی</string>
+    <string name="dialog_preferences_title">تنظیمات</string>
+    <string name="dialog_cancel_title">  انصراف دادن </string>
+    <string name="dialog_cancel_body"> ایا مطمئن هستید؟ </string>
+    <string name="dialog_delete_title">حذف انشعاب</string>
+    <string name="dialog_delete_body">آیا از حذف انشعاب مورد نظر اطمینان دارید؟</string>
+    <string name="dialog_receive_data">در حال دریافت اطلاعات از سرور</string>
+    <string name="dialog_send_data"> در حال ارسال اطلاعات به سرور</string>
+    <string name="dialog_back_title">خروج از پرونده</string>
+    <string name="dialog_back_body">توجه: در صورت خروج, پرونده به عنوان بازدید نشده ذخیره می گردد.</string>
+    <string name="dialog_contact_title">ارتباط با مشترک</string>
+    <string name="dialog_contact_body">در صورت تمایل به برقراری ارتباط با مشترک:\n "%s"  \n\nیکی از گزینه های زیر را انتخاب  نمایید.</string>
+    <string name="dialog_exit_title"> خروج </string>
+    <string name="dialog_exit_body"> آیا قصد خروج از حساب کاربری خود را دارید؟ </string>
+    <string name="dialog_upload_title">ارسال به سرور</string>
+    <string name="dialog_upload_body">آیا از صحت اطلاعات ارسالی به سرور مطمئن هستید؟  \n\nاطلاعات ارسالی: %s پرونده انتخاب شده است</string>
+    <string name="dialog_cartable_title">ذخیره کارتابل</string>
+    <string name="dialog_cartable_body">آیا از صحت اطلاعات ثبت شده در پرونده مطمئن هستید؟</string>
+    <string name="dialog_button_upload">ارسال</string>
+    <string name="dialog_button_return">بازگشت</string>
+    <string name="dialog_button_exit">خروج</string>
+    <string name="dialog_button_confirm">تایید</string>
+    <string name="yes">بله</string>
+    <string name="no">خیر</string>
+    <string name="ok">انتخاب</string>
+    <string name="cancel">لغو</string>
+    <string name="dialog_"></string>
+
+    <!-- login page -->
+    <string name="user_name"> نام کاربری </string>
+    <string name="pass_word"> گذرواژه </string>
+    <string name="login_button"> ورود </string>
+    <string name="register"> ثبت نام </string>
+    <string name="invalid_login"> اطلاعات ورود اشتباه است </string>
+
+    <!-- phone -->
+    <string name="sms"> پیام </string>
+    <string name="call"> تماس </string>
+    <string name="sms_call"> برقراری تماس </string>
+    <string name="default_sms">متن پیش فرض ارتباط از طریق پیامک</string>
+    <string name="body_sms"> ماموری برای بررسی کنتور شما اعزام می شود لطفا در صورت عدم حضور اطلاع دهید </string>
+
+    <!-- report fragment -->
+    <string name="from_date"> از تاریخ </string>
+    <string name="to_date"> تا تاریخ </string>
+    <string name="pie_chart">pie.htm</string>
+    <string name="html_path">file:///android_asset/Content/Charts/</string>
+
+    <!-- search user -->
+    <string name="search"> جستجو </string>
+    <string name="bill_identification"> شناسه قبض </string>
+    <string name="subscription_number"> اشتراک </string>
+    <string name="fabrik_number"> بدنه کنتور </string>
+    <string name="first_name"> نام </string>
+    <string name="last_name"> نام خانوادگی </string>
+    <string name="Page">Page</string>
+    <string name="of">of</string>
+    <string name="next"> بعدی </string>
+    <string name="previous"> قبلی </string>
+
+    <!-- sharedpref -->
+    <string name="preferences_delete"> حذف </string>
+    <string name="preferences_cancel"> حذف </string>
+    <string name="preferences_register"> ثبت </string>
+    <string name="preferences_update"> بروزرسانی </string>
+    <string name="preferences_update_observation"> دریافت لیست مشاهدات </string>
+    <string name="webservices_address"> ادرس سرور </string>
+    <string name="port"> گذرگاه </string>
+
+    <!-- cartable State -->
+    <string name="cartable_state_reg"> بازدید شده </string>
+    <string name="cartable_state_not_reg"> بازدید نشده </string>
+    <string name="cartable_state_faulty"> دارای خطا </string>
+    <string name="cartable_state_send"> ارسال موفق </string>
+
+    <!-- cartable Fields-->
+    <string name="cartable_status"> وضعیت </string>
+    <string name="cartable_request_number"> درخواست </string>
+    <string name="cartable_subscription_name">  مشترک </string>
+    <string name="cartable_address"> ادرس </string>
+    <string name="cartable_phone"> تلفن </string>
+
+    <!-- cartable tabs -->
+    <string name="cartable_tab_place_info">مشخصات</string>
+    <string name="cartable_tab_demanded_branch"> درخواستی  </string>
+    <string name="cartable_tab_new_branch"> انشعاب جدید </string>
+    <string name="cartable_tab_inc_dec">  افزایش/کاهش </string>
+    <string name="cartable_tab_branch_collector"> جمع اوری انشعاب </string>
+    <string name="cartable_tab_electric_supply"> تامین برق </string>
+    <string name="cartable_tab_visit_history"> مشاهدات </string>
+    <string name="cartable_tab_commitments"> تعهدات </string>
+    <string name="cartable_tab_material"> لوازم  </string>
+
+    <!-- cartable place info -->
+    <string name="place_info_visit_date"> تاریخ بازدید </string>
+    <string name="place_info_section"> بخش </string>
+    <string name="place_info_floor_count"> تعداد طبقه </string>
+    <string name="place_info_geographical_area"> محدوده </string>
+    <string name="place_info_unit_count"> تعداد واحد </string>
+    <string name="place_info_village_box"> روستایی </string>
+    <string name="place_info_long"> طول جغرافیایی </string>
+    <string name="place_info_lat"> عرض جغرافیایی </string>
+    <string name="place_info_show_map"> نمایش مکان </string>
+    <string name="place_info_mark_map"> ثبت مکان </string>
+
+    <!-- cartable new branch -->
+    <string name="new_branch"> انشعاب جدید </string>
+    <string name="new_branch_phase"> فاز </string>
+    <string name="new_branch_amper"> امپر </string>
+    <string name="new_branch_power"> قدرت </string>
+    <string name="new_branch_taarefe"> تعرفه </string>
+    <string name="new_branch_voltage"> ولتاژ </string>
+    <string name="new_branch_count"> تعداد </string>
+    <string name="new_branch_create"> ایجاد انشعاب جدید </string>
+    <string name="new_branch_type"> نوع مشترک </string>
+    <string name="new_branch_geographical"> محدوده جغرافیایی </string>
+    <string name="power_unit"> کیلو وات </string>
+    <string name="list_item_branch_add_button">ایجاد انشعاب جدید</string>
+    <string name="list_item_branch_edit_button">تغییر انشعاب موجود</string>
+    <string name="list_item_branch_collect_button">جمع آوری انشعاب موجود</string>
+
+    <!-- cartable change branch -->
+    <string name="change_branch">  تبدیل قدرت </string>
+    <string name="collect_branch"> انشعاب موجود </string>
+    <string name="change_branch_type"> نوع مشترک </string>
+    <string name="change_branch_create"> انشعاب موجود </string>
+    <string name="change_branch_tariff"> تعرفه </string>
+    <string name="change_branch_voltage"> ولتاژ </string>
+    <string name="change_branch_temp_permanent"> وضعیت انشعاب </string>
+    <string name="change_branch_power"> قدرت </string>
+    <string name="change_branch_old_power"> قدرت موجود </string>
+    <string name="change_branch_amper"> امپر </string>
+    <string name="change_branch_old_amper"> امپر موجود </string>
+    <string name="change_branch_name">  نام مشترک </string>
+    <string name="change_branch_address"> ادرس </string>
+    <string name="change_branch_phase"> فاز </string>
+    <string name="change_branch_old_phase"> فاز موجود </string>
+    <string name="change_branch_phase_amper"> قدرت/آمپر/فاز </string>
+    <string name="change_branch_doc_number"> پرونده </string>
+    <string name="change_branch_branch_code"> اشتراک </string>
+    <string name="change_branch_fabrik_number"> بدنه </string>
+    <string name="change_branch_status"> وضعیت </string>
+    <string name="change_branch_merge"> ادغام </string>
+    <string name="change_branch_separation"> تفکیک </string>
+    <string name="change_branch_increase"> افزایش </string>
+    <string name="change_branch_decrease"> کاهش </string>
+    <string name="Cartable_send_server"> ارسال به سرور </string>
+    <string name="cartable_recieve_server"> دریافت </string>
+
+    <!-- cartable Electric Supply -->
+    <string name="electric_supply_avail_network"> از شبکه موجود </string>
+    <string name="electric_supply_create_network"> نیاز به ایجاد شبکه </string>
+    <string name="electric_supply_not_possible"> عدم امکان تامین برق </string>
+    <string name="electric_supply_not_possible_due_to"> به دلیل </string>
+
+    <!-- cartable observation -->
+    <string name="exceptions_list">لیست مشاهده</string>
+    <string name="exceptions_groups">دسته بندی مشاهدات</string>
+    <string name="selected_exception">مشاهدات انتخاب شده</string>
+    <string name="item_exist">این مورد قبلا اضافه شده</string>
+
+    <string name="msg_postalcode_invalid">کدپستی وارد شده کمتر از %d رقم میباشد.</string>
+    <string name="msg_invalid_national_code">کد ملی وارد شده نا معتبر است</string>
+    <string name="txt_identity">شناسایی (ردیف/کدمامور/روزکار/کد منطقه)</string>
+    <string name="description">توضیحات</string>
+    <string name="newValue">مقدار جدید</string>
+
+    <!-- cartable measurement -->
+    <string name="cartable_measurment"> اضافه کردن کالا </string>
+    <string name="cartable_measurment_choose_template">  انتخاب قالب: </string>
+    <string name="cartable_measurment_add">  اضافه شود  </string>
+    <string name="cartable_measurment_subscrip"> اشتراک </string>
+    <string name="cartable_measurment_goods"> کالا </string>
+    <string name="cartable_measurment_estimated">تعداد </string>
+    <string name="cartable_measurment_estimated_unit"> مقدار/واحد </string>
+    <string name="cartable_measurment_unit"> واحد </string>
+    <string name="cartable_measurment_responsible"> متعهد </string>
+    <string name="cartable_measurment_status"> وضعیت </string>
+    <string name="cartable_measurment_create"> اضافه کردن کالا </string>
+    <string name="cartable_measurment_finish"> ذخیره کارتابل </string>
+    <string name="cartable_next_button">بعدی</string>
+    <string name="cartable_previous_button">قبلی</string>
+    <string name="cartable_measurement_materials_status">نصب</string>
+
+
+    <!-- Toast -->
+    <string name="src_invalid">  ادرس سرور وارد نشده است </string>
+    <string name="port_invalid"> پورت وارد نشده است  </string>
+    <string name="preferences_saved">تنظیمات با موفقیت ذخیره گردید.</string>
+    <string name="empty_field"> متغیرها درست مقداردهی نشده اند </string>
+    <string name="change_branch_empty_phase"> اطلاعات انشعاب موجود دریافت نشده است </string>
+    <string name="empty_fabrik"> شماره بدنه وارد نشده است </string>
+    <string name="wrong_power"> قدرت اشتباه وارد شده </string>
+    <string name="equal_power"> قدرت وارد شده با مقدار قبلی برابر است </string>
+    <string name="google_map"> سرویس های گوگل اپدیت نیستند </string>
+    <string name="cartable_save"> اطلاعات ارسال شد </string>
+    <string name="cartable_time_out"> سرور پاسخگو نمی باشد </string>
+    <string name="cartable_not_save"> اطلاعات ارسال نشد </string>
+    <string name="cartable_cannot_send"> کارتابل شرایط ارسال را دارا نمی باشد</string>
+    <string name="cartable_cannot_change">کارتابل ارسال شده قابل تغییر نمی باشد</string>
+    <string name="cartable_branch_not_set"> انشعاب درخواستی ثبت نشده است </string>
+    <string name="cartable_branch_merge_collect_not_set"> جمع اوری از نوع ادغام ثبت نشده است </string>
+    <string name="cartable_branch_sep_newbranch_not_set"> نصب جدید از نوع تفکیک ثبت نشده است </string>
+    <string name="cartable_branch_change_in_collect"> انشعاب تبدیل قدرت در جمع اوری هم وجود دارد </string>
+    <string name="cartable_branch_collect_not_in_change"> انشعابی جهت ادغام ثبت نشده است </string>
+
+    <!-- pagers pages in view searched user -->
+    <string name="tab_title_1">جستجو و رویت اطلاعات مشتری</string>
+    <string name="tab_title_2"> سوابق فروش </string>
+    <string name="tab_title_3"> سوابق وصول </string>
+    <string name="tab_title_4"> حسابداری مشترک </string>
+
+    <!-- tabs in sale table -->
+    <string name="correct_sale"> صحیح </string>
+    <string name="incorrect_sale"> غلط </string>
+    <string name="current_sale"> علی الحساب </string>
+    <string name="not_exported_sale"> صادر نشده </string>
+    <string name="consumption_diagram"> نمودار مصرف </string>
+
+    <!-- correct sale records -->
+    <string name="update_time"> تاریخ بروزرسانی </string>
+    <string name="current_monitoring_time"> تاریخ قرائت فعلی </string>
+    <string name="active_usage"> مصرف اکتیو </string>
+    <string name="reactive_usage"> مصرف راکتیو </string>
+    <string name="sale_price"> مبلغ فروش </string>
+
+    <!-- retrieve records -->
+    <string name="retrieve_Price"> مبلغ وصول </string>
+    <string name="bank_Name"> نام بانک </string>
+    <string name="retrieve_Time"> تاریخ وصول </string>
+    <string name="period"> دوره </string>
+
+    <!-- Nav Drawer Menu Items -->
+    <string name="desc_list_item_icon">Item Icon</string>
+    <string name="drawer_open">Slider Menu Opened</string>
+    <string name="drawer_close">Slider Menu Closed</string>
+
+    <!-- layout two in info Fragment -->
+    <string name="sub_type"> نوع مشترک </string>
+    <string name="sub_status"> وضعیت مشترک </string>
+    <string name="counter_type"> نوع انشعاب </string>
+    <string name="zone_code"> کد محدوده </string>
+
+    <!-- layout three in info Fragment -->
+    <string name="trfh_code"> سرتعرفه </string>
+    <string name="option"> گزینه </string>
+    <string name="family_code"> کد خانوار </string>
+    <string name="phase"> فاز </string>
+    <string name="amper"> آمپر </string>
+    <string name="contract_demand"> دیماند قرارداد </string>
+    <string name="voltage_code"> کد ولتاژ </string>
+    <string name="work_stream"> گردش کار </string>
+    <string name="institution_code"> کد موسسه </string>
+    <string name="activity_code"> کد فعالیت </string>
+    <string name="postal_type"> نوع پست </string>
+    <string name="atmosphere_code"> کد فشار </string>
+    <string name="authorization_allowed_demand"> دیماند مجاز پروانه </string>
+    <string name="service_line_code"> کد خط سرویس </string>
+    <string name="contract_date"> تاریخ قرارداد </string>
+    <string name="establish_date"> تاریخ ایجاد </string>
+    <string name="authorization_expirement_date"> تاریخ انقضا پروانه </string>
+    <string name="temporary_dec_expirement_date"> تاریخ انقضا کاهش موقت </string>
+    <string name="main_power"> قدرت اصلی </string>
+    <string name="trf_code"> کد تعرفه </string>
+    <string name="misscount_code"> کد بدحسابی </string>
+
+    <!-- layout four in info Fragment -->
+    <string name="sub_name"> نام </string>
+    <string name="father_name"> نام پدر </string>
+    <string name="Ident_num"> شماره شناسنامه </string>
+    <string name="number"> شماره تماس </string>
+    <string name="ID_code"> کد ملی </string>
+    <string name="birth_city"> صادره از </string>
+    <string name="email"> ایمیل </string>
+    <string name="promotion_code"> کد تخفیف </string>
+    <string name="subs_type"> نوع مشترک </string>
+    <string name="phone_num"> شماره همراه </string>
+    <string name="zip_code"> کدپستی </string>
+    <string name="address"> آدرس </string>
+
+    <!-- layout five in info Fragment -->
+    <string name="latest_visit_date"> تاریخ اخرین قرائت </string>
+    <string name="latest_sell_price"> مبلغ اخرین فروش </string>
+    <string name="latest_receive_date"> تاریخ اخرین وصول </string>
+    <string name="latest_receive_price"> مبلغ اخرین وصول </string>
+
+    <!-- layout six in info Fragment -->
+    <string name="debt_status"> وضعیت بدهی </string>
+    <string name="sales_aggregation"> فروش </string>
+    <string name="receive_aggregation"> وصول </string>
+    <string name="debt_aggregation"> بدهی </string>
+    <string name="deadline_debt"> با مهلت </string>
+    <string name="non_deadline_debt"> بدون مهلت </string>
+    <string name="energy"> انرژی </string>
+    <string name="branch"> انشعاب </string>
+    <string name="other_services"> سایر خدمات </string>
+    <string name="aggregate"> جمع </string>
+
+    <!-- json keys for observations -->
+    <string name="jsn_mainCode">MainCode</string>
+    <string name="jsn_desc">description</string>
+    <string name="jsn_SubCode1">SubCode1</string>
+    <string name="jsn_SubCode2">SubCode1</string>
+    <string name="jsn_observeCode">observeCode</string>
+    <string name="jsn_Code">OrgCode</string>
+    <string name="jsn_Title">OrgName</string>
+    <string name="jsn_ObserveType">observeType</string>
+    <string name="jsn_templateType">templateType</string>
+    <string name="jsn_DataType">dataType</string>
+    <string name="title_activity_first_time_setting">FirstTimeSetting</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="confirm">تائید</string>
+    <string name="msg_save_settings">تنظیمات ذخیره شد.</string>
+    <string name="change_server_address">تغییر سرور</string>
+    <string name="server_setting">تنظیم سرور</string>
+
+</resources>

@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/dark_gray"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:id="@+id/slider"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TableLayout
+            android:id="@+id/table"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TableRow>
+                <EditText
+
+                    android:id="@+id/subscription_number"
+                    android:minWidth="100dp"
+                    android:maxLength="13"
+                    android:singleLine="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="number" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16dp"
+                    android:text="@string/subscription_number"/>
+            </TableRow>
+            <TableRow>
+                <EditText
+                    android:id="@+id/bill_identification"
+                    android:minWidth="170dp"
+                    android:maxLength="13"
+                    android:singleLine="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16dp"
+                    android:text="@string/bill_identification"/>
+            </TableRow>
+            <TableRow>
+                <EditText
+                    android:id="@+id/fabrik_number"
+                    android:minWidth="100dp"
+                    android:maxLength="13"
+                    android:singleLine="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="number" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16dp"
+                    android:text="@string/fabrik_number"/>
+            </TableRow>
+        </TableLayout>
+        <Button android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/table"
+            android:id="@+id/searchbtn"
+            android:text="@string/search"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/result"
+        android:visibility="invisible"
+        android:background="@drawable/light_gray"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:background="@android:color/darker_gray"
+                android:padding="10dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:background="@drawable/cell_shape_two"
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.2"
+                    android:padding="5dp"
+                    android:layout_marginRight="10dp"
+                    android:text="@string/last_name"/>
+
+                <TextView
+                    android:background="@drawable/cell_shape_two"
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.2"
+                    android:padding="5dp"
+                    android:layout_marginRight="10dp"
+                    android:text="@string/first_name"/>
+
+                <TextView
+                    android:background="@drawable/cell_shape_two"
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.2"
+                    android:padding="5dp"
+                    android:layout_marginRight="10dp"
+                    android:text="@string/fabrik_number"/>
+
+                <TextView
+                    android:background="@drawable/cell_shape_two"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.3"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:layout_marginRight="10dp"
+                    android:text="@string/bill_identification"/>
+
+                <TextView
+                    android:background="@drawable/cell_shape_two"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.1"
+                    android:layout_marginRight="10dp"
+                    android:padding="5dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/subscription_number"/>
+
+            </LinearLayout>
+
+            <ListView
+                android:id="@+id/list"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"/>
+
+            <LinearLayout
+                android:id="@+id/buttonLayout"
+                android:layout_gravity="end"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/list"
+                android:orientation="horizontal" >
+                <Button
+                    android:id="@+id/previous_button"
+                    android:text="@string/previous"
+                    android:visibility="invisible"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <Button
+                    android:id="@+id/next_button"
+                    android:text="@string/next"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

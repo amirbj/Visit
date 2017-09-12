@@ -1,0 +1,64 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/wholelist"
+    android:divider="#000"
+    android:dividerHeight="1dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <CheckBox
+            style="@style/Font_padding_margin"
+            android:id="@+id/new_branch_tafkik"
+            android:gravity="center"
+            android:clickable="false"
+            android:focusable="false"
+            android:layout_gravity="center"
+            android:focusableInTouchMode="false"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="0.20"/>
+        <TextView
+            style="@style/Font_padding_margin"
+            android:id="@+id/new_branch_count"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="0.20"/>
+
+        <TextView
+            style="@style/Font_padding_margin"
+            android:id="@+id/new_branch_tariff"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="0.20"/>
+
+        <TextView
+            style="@style/Font_padding_margin"
+            android:id="@+id/new_branch_power"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="0.20"/>
+
+        <TextView
+            style="@style/Font_padding_margin"
+            android:id="@+id/new_branch_amper"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="0.20"/>
+
+        <TextView
+            style="@style/Font_padding_margin"
+            android:id="@+id/new_branch_phase"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="0.20"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

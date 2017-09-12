@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/main_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+   <!-- <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        -->
+
+
+        <android.support.v7.widget.SearchView
+            android:id="@+id/appbar_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dp"
+            android:layout_marginLeft="8dp"
+            android:iconifiedByDefault="true"
+            android:background="@android:drawable/dialog_holo_light_frame"
+            app:layout_scrollFlags="scroll|enterAlways|snap"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/wallet_highlighted_text_holo_dark"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".2"
+                android:gravity="center"
+                android:id="@+id/cartable_number"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".2"
+                android:gravity="left"
+                android:text="تعداد"
+                android:id="@+id/textView26" />
+
+
+            <Spinner
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:gravity="center"
+                android:id="@+id/cartable_spinner_display"/>
+
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:gravity="center"
+                android:layout_weight=".1"
+                android:text="نمایش"
+                android:id="@+id/textView24" />
+
+        </LinearLayout>
+
+   <!--     <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:background="@android:color/transparent"
+                android:layout_height="match_parent"
+                android:layout_width="36dp"
+                android:text=""/>
+
+           <TextView
+                android:id="@+id/cartable_subscription_name"
+                style="@style/Font_padding_margin"
+                android:gravity="center"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/cartable_subscription_name"/>
+
+            <TextView
+                android:id="@+id/cartable_request_number"
+                style="@style/Font_padding_margin"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/cartable_request_number"/>
+
+            <TextView
+                android:id="@+id/cartable_status"
+                style="@style/Font_padding_margin"
+                android:layout_height="match_parent"
+                android:layout_width="wrap_content"
+                android:text="@string/cartable_status"/>
+        </LinearLayout>
+        -->
+
+  <!--  </android.support.design.widget.AppBarLayout> -->
+
+
+  <!--  <com.andc.slidingmenu.Utility.NestedListView
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:id="@+id/list_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"> -->
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/swipeContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ListView
+                android:id="@+id/list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:dividerHeight="2dp"
+                android:clipToPadding="false"
+                android:paddingBottom="0dp"/>
+
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/sendToServer"
+        android:src="@drawable/cast_ic_notification_on"
+        app:fabSize="normal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+
+        app:layout_anchorGravity="bottom|left"/>
+</RelativeLayout>
+
+</LinearLayout>

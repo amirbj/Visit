@@ -1,0 +1,14 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="slidingmenu.andc.com.dataaccess">
+
+    <application android:label="@string/app_name" android:icon="@drawable/ic_launcher"
+        android:name="com.orm.SugarApp">
+        <meta-data android:name="DATABASE" android:value="database.db" />
+        <meta-data android:name="VERSION" android:value="2" />
+        <meta-data android:name="QUERY_LOG" android:value="true" />
+        <meta-data android:name="DOMAIN_PACKAGE_NAME" android:value="slidingmenu.andc.com.dataaccess" />
+
+    </application>
+
+
+</manifest>
